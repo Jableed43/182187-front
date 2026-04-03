@@ -1,0 +1,84 @@
+/* 
+   RETO FINAL: TARJETA DE PERFIL (VERSIÓN SIMPLIFICADA PARA CLASE)
+   ------------------------------------------------------------
+*/
+
+/* 1. RESET GLOBAL: Para que todos los navegadores se vean igual */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center; /* Centra textos e iconos */
+    padding-top: 50px;
+}
+
+/* 2. LA CAJA PRINCIPAL (LA TARJETA) */
+.card {
+    width: 300px;
+    background-color: white;
+    margin: 0 auto; /* Centrado clásico */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden; /* Para que el color del encabezado no se salga */
+}
+
+/* 3. ENCABEZADO (CON COLOR O DEGRADADO) */
+.card-header {
+    height: 100px;
+    background-color: #00b894; /* Color simple */
+}
+
+/* 4. IMAGEN DE PERFIL */
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Círculo */
+    border: 3px solid white;
+    margin-top: -40px; /* Sube la imagen a la mitad */
+}
+
+/* 5. CUERPO DE LA TARJETA */
+.card-body {
+    padding: 20px;
+}
+
+.name {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.role {
+    color: #00b894;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+}
+
+/* 6. PIE DE TARJETA (ICONOS) */
+.card-footer {
+    padding: 20px;
+    background-color: #eee;
+}
+
+/* Estilo de los iconos sociales */
+.social-link {
+    display: inline-block; /* Uno al lado del otro */
+    margin: 0 10px;
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Cambio de color al pasar el mouse */
+.social-link:hover {
+    color: #00b894;
+}

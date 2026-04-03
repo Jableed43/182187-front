@@ -1,0 +1,95 @@
+/* 
+   BASE PARA LA CLASE - MODELO DE CAJA (BOX MODEL) 
+   -----------------------------------------------
+   Nota: No se usa Flexbox ni Grid. Se usa display: inline-block.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    /* FALTA: Propiedad global para resetear el cálculo del ancho */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    padding-bottom: 50px;
+}
+
+header {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contenedor Base */
+.main-container {
+    text-align: center; /* Permite centrar los inline-block de adentro */
+    padding: 40px;
+}
+
+/* 1. Diferencia entre Content-Box y Border-Box */
+.box-content, .box-border {
+    width: 300px;
+    height: 300px;
+    background-color: #f1c40f;
+    padding: 40px; 
+    border: 10px solid #2ecc71;
+    display: inline-block; /* Alternativa a Flexbox */
+    vertical-align: top;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Aplica el box-sizing correspondiente aquí */
+.box-content {
+    box-sizing: content-box;
+}
+
+.box-border {
+    /* FALTA: Propiedad para que el ancho total sea exactamente 300px */
+    box-sizing: border-box;
+}
+
+/* 2. Demostración de Espaciados */
+.spacing-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.margin-box {
+    background-color: #e74c3c;
+    color: white;
+    width: 200px;
+    display: block;
+    margin: 60px auto; /* Centrado y separado arriba/abajo */
+    padding: 20px;
+}
+
+.padding-box {
+    background-color: #3498db;
+    color: white;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    padding: 50px; /* Prueba distintos valores aquí */
+    border: 2px solid #333;
+}
+
+.border-box-style{
+    background-color: violet;
+    color: white;
+    padding: 1rem;
+    border-width: 10px;
+    border-color: black;
+    border-style: double;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.ejemplo-tamanio{
+    width: 50vw;
+    height: 30vh;
+    background-color: #d3a00a;
+}

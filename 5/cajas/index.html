@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base: Modelo de Cajas (Box Model)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Práctica de Modelo de Caja</h1>
+    </header>
+
+    <div class="main-container">
+        <!-- 1. Content-Box (Crece al agregar padding) -->
+        <div class="box-content">
+            <h2>Content Box</h2>
+            <p>Por defecto (box-sizing: content-box).</p>
+            <p>Ancho: 300px + Padding + Borde.</p>
+        </div>
+
+        <!-- 2. Border-Box (Se mantiene al agregar padding) -->
+        <div class="box-border">
+            <h2>Border Box</h2>
+            <p>Recomendado (box-sizing: border-box).</p>
+            <p>Ancho: 300px (Incluye Padding y Borde).</p>
+        </div>
+    </div>
+
+    <!-- 3. Spacing Demo -->
+    <div class="spacing-container">
+        <div class="margin-box">Margen Externo (Margin)</div>
+        <div class="padding-box">Relleno Interno (Padding)</div>
+        <div class="border-box-style">Borde (Border)</div>
+    </div>
+
+    <div class="ejemplo-tamanio" >
+
+    </div>
+</body>
+</html>

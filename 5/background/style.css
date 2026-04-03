@@ -1,0 +1,66 @@
+/* 
+   BASE PARA LA CLASE - FONDOS (BACKGROUND) 
+   ----------------------------------------
+   Nota: No se usa Flexbox ni Grid. Se usa centrado con text-align: center.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Base para cada bloque de práctica */
+.box {
+    width: 100%;
+    min-height: 400px;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* 1. Color Sólido: Acompleta aquí */
+.simple {
+        background-color: #777896;
+}
+
+/* 2. Degradado: Prueba con linear-gradient(...) */
+.gradient {
+    background: #2A7B9B;
+background: linear-gradient(120deg, rgba(42, 123, 155, 1) 0%, rgba(199, 87, 184, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+/* 3. Imagen (Cover): Usa bg1.png */
+.image-cover {
+    background-image: url('bg1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* FALTA: Propiedad para cubrir todo el espacio */
+}
+
+/* 4. Imagen (Fixed): Usa bg1.png o bg2.png */
+.image-fixed {
+    background-image: url('bg1.png');
+    background-attachment: fixed; /* produce un efecto parallax al hacer scroll */
+    background-size: cover;
+    background-position: center;
+    /* FALTA: Propiedad para fijar el fondo */
+}
+
+.image-pattern {
+    background-image: url('pattern.jpg');
+    background-repeat: repeat;
+}

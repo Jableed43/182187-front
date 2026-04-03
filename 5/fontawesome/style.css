@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Nosifer&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.dancing-script-regular {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dancing-script-medium {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.dancing-script-semibold {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.dancing-script-bold {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nosifer-regular {
+  font-family: "Nosifer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: red;
+}
+
+.fonts-demo{
+    font-size: 30px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fcfcfc;
+}
+
+header {
+    background: #00b894;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* 1. Ejemplos de Iconos: Centrado con inline-block */
+.icon-list {
+    text-align: center;
+    padding: 20px;
+}
+
+.icon-card {
+    display: inline-block; /* Alternativa a Flexbox */
+    padding: 20px;
+    width: 200px; /* Tamaño fijo para que se alineen bien */
+}
+
+.icon-card i {
+    font-size: 50px;
+    color: #00b894;
+    margin-bottom: 10px;
+}
+
+/* 2. Google Fonts: Outfit */
+.font-light { font-weight: 300; }
+.font-regular { font-weight: 400; }
+.font-bold { font-weight: 700; }
+
+
+/* 3. Redes Sociales Estilizadas */
+.social-icons {
+    text-align: center;
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+    display: inline-block; /* Alternativa a Flexbox */
+    line-height: 60px; /* Centra el icono verticalmente dentro del círculo */
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: 10px;
+    background-color: #333;
+}
+
+.facebook { background-color: #3b5998; }
+.instagram { background-color: #e1306c; }
+.youtube { background-color: #ff0000; }
