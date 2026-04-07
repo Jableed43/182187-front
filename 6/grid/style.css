@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container{
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    background-color: goldenrod;
+    border: solid black;
+}
+
+.grid-item{
+    background-color: green;
+    border: solid black;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 40px;
+}
