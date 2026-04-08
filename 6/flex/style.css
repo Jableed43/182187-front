@@ -7,15 +7,78 @@
    display: flex;
     gap: 20px;
     padding: 20px;
-    background-color: goldenrod;
+    background-color: rgb(54, 54, 156);
     border: solid black;
 }
 
 .flex-item{
-    background-color: green;
+    background-color: white;
     border: solid black;
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
     font-size: 40px;
+}
+
+.flex-equal-space {
+    /* Esta propiedad genera espacio entre los items, pero no deja espacio en los bordes laterales */
+    justify-content: space-between;
+}
+
+.flex-space-around{
+    /* Esta propiedad genera el mismo espaciado entre items, pero entre los bordes laterales y el item mas cercano tiene 1/2 de la distancia entre items */
+    justify-content: space-around;
+}
+
+.flex-space-evenly{
+    /* La distancia entre items y los bordes laterales es la misma */
+    justify-content: space-evenly;
+}
+
+.fixed{
+    width: 100px;
+}
+
+.variable{
+    /* Si tenes un solo elemento con flex-grow ese va a ocupar todo el ancho disponible */
+    /* Si hay un flex-grow entre los hermanos y este 1 es menor, entonces el otro sera mas grande */
+    flex-grow: 1;
+}
+
+.flex-align-center{
+    /* viewport height -> % del alto de la pantalla 50vh -> 50% de la altura de la pantalla */
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-color{
+    background-color: rgb(13, 113, 115);
+}
+
+.column-container{
+    align-items: center;
+    flex-direction: column;
+    height: 92vh;
+    justify-content: space-evenly;
+}
+
+.column-container .flex-item{
+    width: 25%;
+}
+
+.flex-start{
+    align-self: flex-start;
+}
+
+.flex-end{
+    align-self: flex-end;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.wrap .flex-item{
+    width: 10%;
 }
