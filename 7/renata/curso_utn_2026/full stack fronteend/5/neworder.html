@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>/NEW ORDER/</title>
+
+  <!-- ⚠️ CORRECCIÓN: tenías mal escrito el CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1 class="orden">NEW ORDER</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#services"><span>Acerca del evento</span></a></li>
+        <li><a href="#about">Entradas disponibles</a></li>
+        <li><a href="#shows">Próximos Shows</a></li>
+        <li><a href="#comunidad">Comunidad</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO -->
+    <section id="home">
+      <h2>New Order en Argentina: La vigencia y frescura del nuevo orden</h2>
+      <h2>La banda británica se reencontrará con sus fans en noviembre.</h2>
+
+      <img class="imagen"
+        src="./img/portadas-discos-arte-new-order-power-corrupiton-and-lies.jpg"
+        alt="imagen-hero"
+      />
+    </section>
+
+    <!-- ENTRADAS -->
+    <section id="about">
+      <h2>Entradas</h2>
+
+      <ul>
+        <li>V.I.P</li>
+        <li>Campo</li>
+        <li>Platea</li>
+      </ul>
+
+      <img class="imagen"
+        src="./img/unnamed.jpg"
+        alt="entradas"
+      />
+    </section>
+
+    <!-- ACERCA -->
+    <section id="services">
+      <h2>Acerca de</h2>
+
+      <p>
+        Nos especializamos en brindar soluciones web efectivas y eficientes
+        para su emprendimiento.
+      </p>
+
+      <p>
+        New Order se prepara para pisar suelo argentino...
+      </p>
+    </section>
+
+    <!-- AUSPICIANTES (⚠️ CLAVE: agregué clase sponsors) -->
+    <section class="sponsors">
+      <h2>Marcas que confían en nosotros</h2>
+
+      <img class="auspiciantes" src="./img/Logo_de_Indie_Hoy.png" />
+      <img class="auspiciantes" src="./img/fernet-1882-logo-png_seeklogo-230758.png" />
+      <img class="auspiciantes" src="./img/alpogo.png" />
+      <img class="auspiciantes" src="./img/images.png" />
+    </section>
+
+    <!-- FORM -->
+    <section class="formulario" id="contact">
+      <h2>Contacto</h2>
+
+      <form>
+        <label>Nombre:</label>
+        <input placeholder="Nombre..." type="text" />
+
+        <label>Apellido:</label>
+        <input placeholder="Apellido..." type="text" />
+
+        <label>Motivo de contacto</label>
+        <select>
+          <option>Quiero recibir notificaciones</option>
+          <option>Quiero requerir servicios</option>
+          <option>Otro motivo</option>
+        </select>
+
+        <label>Mensaje:</label>
+        <textarea></textarea>
+
+        <div>
+          <button type="submit">Enviar</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+</body>
+</html>

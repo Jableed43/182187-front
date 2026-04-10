@@ -1,0 +1,115 @@
+.grid-galeria {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 13px;
+    width: 90%;
+    max-width: 1200px; */
+
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-auto-rows: 200px; 
+    gap: 15px;
+    padding: 10px;
+}
+
+.grid-galeria img {
+    /* width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    filter: grayscale(50%);
+    transition: 0.3s; */
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    background-color: #ddd;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto hace que la imagen se recorte para llenar el espacio sin deformarse */
+    border-radius: inherit;
+}
+
+.grid-galeria img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1500;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-contenido {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.modal-contenido.fade-in {
+    opacity: 1;
+}
+
+/* BOTÓN CERRAR */
+.cerrar {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* BOTONES */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+
+/* 2. TABLET (Desde 600px de ancho) */
+@media (min-width: 600px) {
+    .grid-galeria {
+        grid-template-columns: repeat(3, 1fr); /* 2 columnas */
+    }
+    
+    /* Hacemos que algunas imágenes destaquen un poco más en tablet */
+    .item-1, .item-4 {
+        grid-row: span 2;
+    }
+}
+
+/* 3. DESKTOP (Desde 1024px de ancho - El diseño de tu imagen) */
+@media (min-width: 1024px) {
+    .grid-galeria {
+        grid-template-columns: repeat(2, 1fr); /* Volvemos a las 4 columnas */
+        grid-auto-rows: 150px;
+    }
+
+    /* Replicamos exactamente las proporciones de tu imagen adjunta */
+    .item-1 { grid-row: span 2; }
+    .item-3 { grid-column: span 1; }
+    .item-4 { grid-row: span 2; }
+    .item-7 { grid-column: span 2; }
+}

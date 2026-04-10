@@ -1,0 +1,135 @@
+*{
+    color: red;
+}
+
+/*estilos globales/
+/* Estilos globales */
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body{
+    background: #012045;
+    color: white;
+}
+/* Estilos de etiquetas */
+h1{
+    color: rgb(0 101 138);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+h2{
+    color: #1E4FEB;
+}
+
+/* selector anidado o jerarquia */
+header nav ul li a span {
+    color: lightsalmon;
+}
+/* Selector multiple que afecta a los h1 y a los ul */
+h1, ul {
+    font-weight: 700;
+}
+
+/* si se sobreescribe una regla de un selector o etiqueta la ultima regla es la que queda */
+
+.imagen{
+    width: 700px;
+    height: 400px;
+    border: solid 3px gray;
+}
+
+.imagen-green-border{
+    border-color: greenyellow;
+}
+
+#send{
+    background-color: green;
+    color: white;
+}
+
+#reset{
+    background-color: red;
+    color: white;
+}
+
+/* Cual es el comodin de la especificidad? */
+
+form div button#reset.reset-button{
+    background-color: rgb(116, 18, 18) !important;
+}
+
+/* el simbolo > indica que la relacion padre-hijo es directa */
+section > h2, h1 {
+    color: #1fb3d6;
+}
+/* el + es sinonimo de siguiente elemento que se encuentra en la misma jerarquia */
+ul li.services + li a{
+    color: blueviolet;
+}
+
+/* Pseudo clase focus */
+input:focus, select:focus, textarea:focus{
+    border: solid rgb(38, 38, 155);
+}
+
+img:hover{
+    filter: saturate(0);
+}
+
+/* lista-tech */
+
+.lista-tech li{
+    margin: 5px;
+}
+
+.lista-tech li::before{
+    content: "✨";
+    text-decoration: none;
+}
+
+.lista-tech li::after{
+    content: "🕶";
+    text-decoration: none;
+}
+
+input::placeholder{
+    color: pink;
+}
+
+/* Cada 5 afecta el estilo del ultimo, el 5to */
+.lista-tech li:nth-child(5n){
+    color: red;
+}
+
+/* Quiero afectar solo al primero */
+.lista-tech li:first-child{
+    color: yellowgreen;
+}
+
+/* Quiero afectar solo al ultimo */
+.lista-tech li:last-child{
+    text-decoration: line-through;
+    font-size: 24px;
+}
+
+/* Cada 3 items quiero afectar el primero */
+.lista-tech li:nth-child(3n+1){
+    color: black;
+}
+/* Afecta solo a los pares */
+.lista-tech li:nth-child(even){
+    border: rgb(85, 11, 11) solid;
+}
+
+.lista-tech li:nth-child(odd){
+    border: rgb(7, 73, 39) solid;
+}

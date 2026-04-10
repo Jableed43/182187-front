@@ -1,0 +1,710 @@
+body {
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* Degradado radial para simular el brillo central */
+    background: radial-gradient(circle at center, #0b132e 0%, #000 70%);
+    z-index: -1;
+}
+
+.grid-overlay {
+    position: absolute;
+    /* Importante: lo pegamos al fondo */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Le damos mucha altura para que al inclinarse rellene el espacio */
+    height: 100vh;
+
+    /* Líneas más brillantes para asegurar visibilidad */
+    background-image:
+        linear-gradient(rgba(0, 255, 255, 0.4) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 255, 0.4) 1px, transparent 1px);
+    background-size: 60px 60px;
+
+    /* PERSPECTIVA Y ROTACIÓN */
+    /* El scale(1.5) es vital: hace que la rejilla crezca y rellene los bordes */
+    transform: perspective(50px) rotateX(5deg) scale(2.4);
+
+    /* Esto hace que la rotación sea desde la base de la pantalla */
+    transform-origin: center bottom;
+
+    /* Máscara para desvanecer el horizonte */
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%);
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%);
+
+    z-index: -1;
+}
+
+canvas {
+    display: block;
+}
+
+.work-sans {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.general {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    z-index: 10;
+}
+
+.container-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: white;
+    align-items: end;
+    align-items: center;
+    gap: 30px;
+    background: radial-gradient(#000, #0B132D);
+    border-bottom: 3px solid #130858;
+    transition: transform 0.5s ease;
+}
+
+.nav-hidden {
+    transform: translateY(-100%);
+}
+
+.SM-nav {
+    position: absolute;
+    left: 1rem;
+}
+
+.contacts {
+    border-radius: 5px;
+    position: relative;
+    left: 81%;
+}
+
+.contact-icons {
+    position: relative;
+    left: 80%;
+    font-size: 30px;
+    padding: 12px;
+}
+
+.gradient {
+    /* Creamos el degradado */
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+
+    /* Recortamos el fondo para que solo brille a través del texto (el ícono) */
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* Hacemos que el color original del ícono sea transparente */
+    -webkit-text-fill-color: transparent;
+
+    /* Importante para que el fondo se renderice correctamente */
+    display: inline-block;
+
+}
+
+h1 {
+    color: white;
+}
+
+header p {
+    color: white;
+}
+
+#letters-color {
+    color: #1F3A5A;
+}
+
+#update-text {
+    font-size: 14px;
+    margin: 15px;
+    color: #7D818A;
+}
+
+#headerid {
+    display: flex;
+    justify-content: center;
+    border: solid #7D818A;
+    width: 50%;
+    align-items: center;
+    height: 400px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    position: relative;
+    flex-direction: column;
+}
+
+#smstore {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    /* Importante para que no se deforme */
+    z-index: 3;
+    position: relative;
+}
+
+
+
+.border-color-img {
+    width: 150px;
+    /* Igual al alto para que sea un círculo perfecto */
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.border-color-img::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-image: conic-gradient(from var(--angle), transparent 0%, #ffffff);
+    padding: 77px;
+    border-radius: 50%;
+    z-index: 2;
+    animation: 3s spin linear infinite;
+    filter: blur(2px);
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}
+
+.indice {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+#search {
+    background-color: #09111c;
+    width: 50%;
+    height: 60px;
+    border-radius: 25px;
+    border: solid #dddd23;
+    margin-left: 25%;
+}
+
+div p {
+    color: white;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.divisor-cards{
+    border: #081331 1px solid;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 10px -5px 20px 1px;
+}
+
+#input-search {
+    background-color: #09111c;
+    margin: 15px;
+    width: 500px;
+    height: 50px;
+    border-radius: 150px;
+    border: solid #dddd23;
+    color: white;
+    font-size: 13px;
+    padding-left: 20px;
+}
+
+/*section*/
+#card-netflix {
+    height: 298px;
+    width: 896px;
+    background-color: #09111c;
+    border: solid #dddd23;
+    border-radius: 25px;
+    padding: 25px;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    ;
+}
+
+#card-netflix div {
+    width: 100%;
+    display: flex;
+}
+
+#card-netflix h2 {
+    color: #B1060F;
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-top: 17px;
+
+}
+
+#card-netflix div img {
+    height: 40px;
+    width: 40px;
+    padding: 12px;
+}
+
+/*div que dice ventajas etc*/
+#inside-card-netflix {
+    background-color: black;
+    border-radius: 25px;
+    margin: 25px;
+    /*el auto lo centra al ancho del padre*/
+    border: solid #dddd23 3px;
+    margin-bottom: 0px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    margin-top: 1px;
+    padding-left: 10px;
+}
+
+#inside-card-netflix p {
+    font-size: 16px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 15px auto;
+    color: #7D818A;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#inside-card-netflix h3 {
+    color: #1F3A5A;
+    padding-left: 30px;
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+
+#inside-card-netflix hr {
+    width: 100%;
+    background-color: #0e112c;
+    border: none;
+    height: 1px;
+}
+
+#select-netflix {
+    appearance: none;
+    background-color: #1F3A5A;
+    color: white;
+    padding: 8px 35px 8px 15px;
+    border: 3px solid #dddd23;
+    border-radius: 4px;
+    font-size: 14px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2309111C'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border-radius: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-grow: 1;
+    box-sizing: border-box;
+    width: 750px;
+}
+
+
+#button-cart {
+    background-color: #1F3A5A;
+    color: white;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 10px;
+    border: 3px solid #dddd23;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.compras {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#card-disney {
+    height: 298px;
+    width: 896px;
+    background-color: #09111c;
+    border: solid #dddd23;
+    border-radius: 25px;
+    padding: 25px;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#card-disney div {
+    width: 100%;
+    display: flex;
+}
+
+#card-disney h2 {
+    color: #097687;
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-top: 17px;
+
+}
+
+#card-disney div img {
+    height: 40px;
+    width: 40px;
+    padding: 12px;
+}
+
+/*div que dice ventajas etc*/
+#inside-card-disney {
+    background-color: black;
+    border-radius: 25px;
+    margin: 25px;
+    /*el auto lo centra al ancho del padre*/
+    border: solid #dddd23 3px;
+    margin-bottom: 0px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    margin-top: 1px;
+    padding-left: 10px;
+}
+
+#inside-card-disney p {
+    font-size: 16px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 15px auto;
+    color: #7D818A;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#inside-card-disney h3 {
+    color: #1F3A5A;
+    padding-left: 30px;
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+
+#inside-card-disney hr {
+    width: 100%;
+    background-color: #0e112c;
+    border: none;
+    height: 1px;
+}
+
+#select-disney {
+    appearance: none;
+    background-color: #1F3A5A;
+    color: white;
+    padding: 8px 35px 8px 15px;
+    border: 3px solid #dddd23;
+    border-radius: 4px;
+    font-size: 14px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2309111C'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border-radius: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-grow: 1;
+    box-sizing: border-box;
+    width: 750px;
+}
+
+#card-prime {
+    height: 298px;
+    width: 896px;
+    background-color: #09111c;
+    border: solid #dddd23;
+    border-radius: 25px;
+    padding: 25px;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#card-prime div {
+    width: 100%;
+    display: flex;
+}
+
+#card-prime h2 {
+    color: #202E5C;
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-top: 17px;
+
+}
+
+#card-prime div img {
+    height: 40px;
+    width: 40px;
+    padding: 12px;
+}
+
+/*div que dice ventajas etc*/
+#inside-card-prime {
+    background-color: black;
+    border-radius: 25px;
+    margin: 25px;
+    /*el auto lo centra al ancho del padre*/
+    border: solid #dddd23 3px;
+    margin-bottom: 0px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    margin-top: 1px;
+    padding-left: 10px;
+}
+
+#inside-card-prime p {
+    font-size: 16px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 15px auto;
+    color: #7D818A;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#inside-card-prime h3 {
+    color: #1F3A5A;
+    padding-left: 30px;
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+
+#inside-card-prime hr {
+    width: 100%;
+    background-color: #0e112c;
+    border: none;
+    height: 1px;
+}
+
+#select-prime {
+    appearance: none;
+    background-color: #1F3A5A;
+    color: white;
+    padding: 8px 35px 8px 15px;
+    border: 3px solid #dddd23;
+    border-radius: 4px;
+    font-size: 14px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2309111C'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border-radius: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-grow: 1;
+    box-sizing: border-box;
+    width: 750px;
+}
+
+
+#card-paramount {
+    height: 298px;
+    width: 896px;
+    background-color: #09111c;
+    border: solid #dddd23;
+    border-radius: 25px;
+    padding: 25px;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#card-paramount div {
+    width: 100%;
+    display: flex;
+}
+
+#card-paramount h2 {
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-top: 17px;
+
+}
+
+#card-paramount div img {
+    height: 40px;
+    width: 40px;
+    padding: 12px;
+}
+
+/*div que dice ventajas etc*/
+#inside-card-paramount {
+    background-color: black;
+    border-radius: 25px;
+    margin: 25px;
+    /*el auto lo centra al ancho del padre*/
+    border: solid #dddd23 3px;
+    margin-bottom: 0px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    margin-top: 1px;
+    padding-left: 10px;
+}
+
+#inside-card-paramount p {
+    font-size: 16px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 15px auto;
+    color: #7D818A;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#inside-card-paramount h3 {
+    color: #1F3A5A;
+    padding-left: 30px;
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+
+#inside-card-paramount hr {
+    width: 100%;
+    background-color: #0e112c;
+    border: none;
+    height: 1px;
+}
+
+#select-paramount {
+    appearance: none;
+    background-color: #1F3A5A;
+    color: white;
+    padding: 8px 35px 8px 15px;
+    border: 3px solid #dddd23;
+    border-radius: 4px;
+    font-size: 14px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2309111C'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border-radius: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-grow: 1;
+    box-sizing: border-box;
+    width: 750px;
+}
+
+#card-hbo {
+    height: 298px;
+    width: 896px;
+    background-color: #09111c;
+    border: solid #dddd23;
+    border-radius: 25px;
+    padding: 25px;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#card-hbo div {
+    width: 100%;
+    display: flex;
+}
+
+#card-hbo h2 {
+    color: #4731C8;
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-top: 17px;
+
+}
+
+#card-hbo div img {
+    height: 40px;
+    width: 40px;
+    padding: 12px;
+}
+
+/*div que dice ventajas etc*/
+#inside-card-hbo {
+    background-color: black;
+    border-radius: 25px;
+    margin: 25px;
+    /*el auto lo centra al ancho del padre*/
+    border: solid #dddd23 3px;
+    margin-bottom: 0px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    margin-top: 1px;
+    padding-left: 10px;
+}
+
+#inside-card-hbo p {
+    font-size: 16px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 15px auto;
+    color: #7D818A;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#inside-card-hbo h3 {
+    color: #1F3A5A;
+    padding-left: 30px;
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+
+#inside-card-hbo hr {
+    width: 100%;
+    background-color: #0e112c;
+    border: none;
+    height: 1px;
+}
+
+#select-hbo {
+    appearance: none;
+    background-color: #1F3A5A;
+    color: white;
+    padding: 8px 35px 8px 15px;
+    border: 3px solid #dddd23;
+    border-radius: 4px;
+    font-size: 14px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2309111C'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border-radius: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-grow: 1;
+    box-sizing: border-box;
+    width: 750px;
+}

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container{
+   display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: goldenrod;
+    border: solid black;
+    justify-content: space-evenly;
+}
+
+.flex-item{
+    display: flex;
+    background-color: green;
+    border: solid black;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 40px;
+}
+.flex-space-around{
+    justify-content: space-evenly;
+
+}
+
+.fixed{
+    width: 100px;
+}
+
+.flex-aligin-center{
+
+}
+
+/*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  proba ese rena, se acomoda solo
+  
+  https://cssgrid-generator.netlify.app/*/

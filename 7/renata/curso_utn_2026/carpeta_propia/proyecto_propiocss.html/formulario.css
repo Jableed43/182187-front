@@ -1,0 +1,20 @@
+.formulario {
+  margin-top: 40px;
+}
+
+/* botón */
+.formulario button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #96470f, #ce71af);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* efecto hover */
+.formulario button:hover {
+  transform: scale(1.05);
+}

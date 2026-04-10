@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Ford Mustang: Una Leyenda Americana</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/galeria.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/footer.css"> -->
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar"> <div class="logo"><img src="img/logo_ford.png"> <span>MUSTANG</span></div>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Inicio</a></li> 
+                <li><a href="#modelos"><i class="fas fa-car"></i> Modelos</a></li>
+                <li><a href="#galeria"><i class="fas fa-image"></i> Galería</a></li>
+                <li><a href="#contacto"><i class="fas fa-person"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section-full">
+            <div class="hero-content">
+                <h1><i class="fas fa-gas-pump"></i> Ford Mustang</h1>
+                <p>El rugido que cambió la historia del automovilismo.</p>
+            </div>
+        </section>
+
+        <section id="modelos" class="section-full">
+            <h2>Modelos Icónicos</h2>
+            <div class="cards-container">
+                <article class="card"> <img src="img/classic.jpg" alt="Mustang 1964">
+                    <h3>Generación Original (1964)</h3>
+                    <p>El nacimiento del "Pony Car" que revolucionó los años 60.</p>
+                    <button>Leer más</button>
+                </article>
+                <article class="card"> <img src="img/modern.jpg" alt="Mustang Mach-E">
+                    <h3>Mustang Mach-E</h3>
+                    <p>La evolución eléctrica manteniendo el ADN deportivo.</p>
+                    <button>Leer más</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="galeria" class="section-full">
+            <h2>Galería de Generaciones</h2>
+            <div class="grid-galeria">
+                <img class="item-1" src="img/g1.jpg">
+                <img class="item-2" src="img/g2.jpg">
+                <img class="item-3" src="img/g3.jpg">
+                <img class="item-4" src="img/g4.jpg">
+                <img class="item-5" src="img/g5.jpg">
+                <img class="item-6" src="img/g6.jpg">
+                <img class="item-7" src="img/g7.jpg">
+            </div>
+        </section>
+
+        <!-- MODAL -->
+        <div id="modal" class="modal" onclick="cerrarFuera(event)">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <img class="modal-contenido" id="imgModal">
+
+            <button class="prev" onclick="anterior()">&#10094;</button>
+            <button class="next" onclick="siguiente()">&#10095;</button>
+        </div>
+        <!-- MODAL -->
+
+        <section id="contacto" class="section-full">
+            <h2>Únete al Club</h2>
+            <form class="contacto-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label> <input type="text" id="nombre" name="nombre" required> </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="tel">Teléfono:</label>
+                    <input type="tel" id="tel" name="tel">
+                </div>
+                <div class="form-group">
+                    <label for="modelo-pref">Modelo Favorito:</label>
+                    <select id="modelo-pref" name="modelo-pref"> <option value="clasico">Clásico</option>
+                        <option value="moderno">Moderno</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>¿Deseas recibir noticias?</p>
+                    <label><input type="radio" name="news" value="si" checked> Sí</label>
+                    <label><input type="radio" name="news" value="no"> No</label>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Comentario:</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                </div>
+                <div class="buttons">
+                    <button type="submit">Enviar</button> 
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <p>Ford Mustang | <span>Rodolfo José Ferreyra</span></p> 
+            <p>Jujuy | Argentina</p> 
+            <p>&copy; 2026</p> 
+        </div>
+    </footer>
+    <script src="js/galeria.js"></script>
+
+</body>
+</html>

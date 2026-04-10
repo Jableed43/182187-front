@@ -1,0 +1,14 @@
+.footer{
+    background: rgba(0, 0, 0, 0.9);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:medium;
+    text-align: center;
+}
+
+.footer p span{
+    color: #47A8E5;
+    font-weight: bold;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web standard</title>
+    <link rel="stylesheet" href="./css/estilo.css"  type="text/css" >
+</head>
+<body>
+    <header>
+        <!-- Span sirve para darle estilo a una porcion interna de un texto -->
+        <h1> Sitio web <span>standard</span> </h1>
+        <!-- La nav es la etiqueta de navegacion por excelencia -->
+        <nav>
+            <ul>
+                <li> <a href="#home">Inicio</a> </li>
+                <li> <a href="#services"> <span>Servicios</span>  </a> </li>
+                <li> <a href="#about">Acerca de</a> </li>
+                <li> <a href="#contact">Contacto</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Estamos realizando una one page -->
+    <!-- Main es donde se encuentra el contenido principal -->
+    <main>
+        <section>
+            <h2> Bienvenidos a nuestro sitio web </h2>
+            <p> Este es un sitio web standard con un estilo simple. </p>
+            <img src="https://www.koombea.com/wp-content/uploads/2022/01/website-vs-web-application-banner@2x.webp" alt="imagen-hero">
+        </section>
+
+        <section>
+            <h2> Servicios </h2>
+            <ul>
+                <li> Desarrollo web </li>
+                <li> Diseño responsivo </li>
+                <li> Consultoria tecnica </li>
+            </ul>
+            <img src="https://cdn.lynda.com/course/2839032/2839032-1616742283681-16x9.jpg" alt="servicios">
+        </section>
+
+        <section>
+            <h2> Acerca de </h2>
+            <p>Nos especializamos en brindar soluciones web efectivas y eficientes para su emprendimiento.</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis illum laudantium odit nulla doloremque porro repudiandae cupiditate labore corrupti eligendi quod adipisci, voluptatem quidem, aut modi. Quas unde quod a.
+            Magni molestiae possimus expedita, quos optio consequuntur rerum voluptates obcaecati officia necessitatibus? Saepe sequi est incidunt, obcaecati consectetur iste rerum veritatis. Nihil a rem alias vitae cum doloribus animi delectus.
+            Tempora nostrum et quod. Odit veritatis repellat, animi eligendi nihil ipsam vitae nesciunt expedita delectus id culpa itaque eaque minima magni nisi ut eius, possimus similique soluta laborum earum dolores!
+            Perferendis obcaecati blanditiis quisquam corrupti animi eveniet ratione optio, harum nostrum, reprehenderit necessitatibus, facilis illo quasi ad tempora laborum recusandae adipisci quos! Porro deleniti atque delectus, explicabo minima at molestias. </p>
+        </section>
+
+        <section>
+            <h2>Contacto</h2>
+            <form>
+                <!-- El proposito de label es guiar al usario de que debe escribir en el campo -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre">
+                <br>
+                <label for="Apellido">Apellido:</label>
+                <input type="text" name="Apellido">
+                <br> 
+                <label for="motivo">Motivo de contacto</label>
+                <select name="motivo">
+                    <option value="trabajo">Quiero trabajar con ustedes</option>
+                    <option value="consulta-servicios">Quiero requerir sus servicios</option>
+                    <option value="otro">Otro motivo</option>
+                </select>
+                <br>
+                <label for="mensaje">Mensaje:</label>
+                <!-- Text area es un input de texto largo -->
+                <textarea name="mensaje"></textarea>
+                
+                <div>
+                    <button type="submit" >Enviar</button>
+                    <button type="reset" >Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

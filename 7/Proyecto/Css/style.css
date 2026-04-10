@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(251, 80%, 42%);
+
+}
+
+header {
+    background-color: hsl(251, 80%, 42%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.Barra {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #333;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+    padding: 20px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fondo {
+    background-image: url(../img/image.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.logo {
+    color: blue;
+}
+
+.historia {
+    text-align: center;
+    color: navy;
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.s {
+    color: navy;
+}
+
+.Card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    color: black;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.encabezado-Card {
+    height: 20%;
+    width: 10%;
+}
+
+.img-Card {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    text-align: center;
+
+}
+
+.cuerpo-Card {
+    padding: 20px;
+}
+
+.nombre {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.servicio {
+    color: #00b894;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.descripcion {
+    color: aquamarine;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: hsl(251, 80%, 42%);
+
+
+}
+
+a:focus {
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+a::after {
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+
+}
+
+a::before {
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+
+}

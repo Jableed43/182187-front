@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+   /* background-color: rgb(0, 0, 0); */
+   background-image: url('Gemini_Generated_Image_rf7kjvrf7kjvrf7k.png');
+   background-color: rgba(0, 0, 0, 0.842);
+}
+
+nav {
+    display: flex;   
+    justify-content: space-between; 
+    padding: 8px 20px;
+    background-color: rgba(0, 0, 0, 0.637);
+}
+
+h2{
+    margin-left: 1rem;
+}
+
+.navegador, .menu , .iconos
+{
+    display: flex;
+    /* justify-content: space-between; si lo pongo no cambia nada*/
+    gap: 20px;
+    align-items: center;
+
+} 
+
+nav ul li {
+  display: inline;
+  color: white;  
+  text-align: center;
+  padding: 3px 6px;
+}
+
+nav ul li a {    
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+ nav div a {    
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+ }
+nav ul li:hover {
+    border-radius: 10px;
+    background-color: blue;
+}
+
+i {
+    font-size: 20px;
+}
+
+.fa-spotify {
+    color: green;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.fa-instagram {
+    color: violet;
+}
+
+.login {
+    background-color: rgb(163, 106, 196);
+    border-radius: 10px;
+   padding: 3px 6px;
+}
+
+#banner {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h1, h2, p {
+    color: white;
+    margin-bottom: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.contenedor-novedades {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    height: 400px;
+    background-color:rgba(115, 34, 190, 0.164);
+    margin: 0 30px ;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.contenedor-novedades img {
+    border-radius: 15px;
+}
+
+.contenedor-novedades h1 {
+    color: black;
+}
+
+.info-novedades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-novedades button {
+    align-self: center;
+    font-size: 18px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background-color: crimson;
+    border: none;
+}
+.caveat-brush-regular {
+  font-family: "Caveat Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.contenedor-videos {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 30px;
+    gap: 30px;
+}
+
+.contenedor-videos div {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+} 
+
+.contenedor-videos div iframe {
+   width: 100%;
+   height: 100%;
+   border-radius: 30px;
+   box-shadow: 5px 5px 10px #a7a7cf;
+
+}

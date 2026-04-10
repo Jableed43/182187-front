@@ -1,0 +1,195 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-weight: 495;
+    line-height: 1.25cm;
+    color: white;
+}
+
+.playwrite-ie-regular {
+    font-family: "Playwrite IE", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.domine-bold{
+  font-family: "Domine", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.faculty-glyphic-regular {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+body footer,
+body footer h2,
+body footer div,
+body footer div p {
+    background-color: rgb(40, 58, 132);
+    color: rgb(255, 255, 255);
+}
+
+body footer div p {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+p {
+    margin-left: 5px;
+    margin-right: 8px;
+    font-size: 14pt;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+h1 {
+    color: rgb(248, 248, 248);
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    margin-top: 47.5px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 47.25px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgb(248, 248, 248);
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-right: 8px;
+}
+
+nav ul li a,
+nav ul li {
+    color: white;
+    font-weight: bold;
+    line-height: 2cm;
+    text-decoration: none;
+    list-style: none;
+    font-size: 14pt;
+}
+
+header div h2 {
+    color: wheat;
+    margin-bottom: 0;
+}
+
+div nav ul li a {
+    color: wheat;
+    margin-top: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-picture {
+    width: 80%;
+    height: 33%;
+    display: block;
+    margin: auto;
+}
+
+
+hr {
+    border-color: white;
+}
+
+i {
+    font-size: 20pt;
+    margin-right: 5px;
+    background-color: rgb(40, 58, 132);
+    vertical-align: middle;
+}
+
+/* DELETE */
+
+/* 2. LA CAJA PRINCIPAL (LA TARJETA) */
+.card {
+    width: 300px;
+    background-color: white;
+    margin: 0 auto; /* Centrado clásico */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden; /* Para que el color del encabezado no se salga */
+}
+
+/* 3. ENCABEZADO (CON COLOR O DEGRADADO) */
+.card-header {
+    height: 100px;
+    background-color: #00b894; /* Color simple */
+}
+
+/* 4. IMAGEN DE PERFIL */
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Círculo */
+    border: 3px solid white;
+    margin-top: -40px; /* Sube la imagen a la mitad */
+}
+
+/* 5. CUERPO DE LA TARJETA */
+.card-body {
+    padding: 20px;
+}
+
+.name {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.role {
+    color: #00b894;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+}
+
+/* 6. PIE DE TARJETA (ICONOS) */
+.card-footer {
+    padding: 20px;
+    background-color: #eee;
+}
+
+/* Estilo de los iconos sociales */
+.social-link {
+    display: inline-block; /* Uno al lado del otro */
+    margin: 0 10px;
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Cambio de color al pasar el mouse */
+.social-link:hover {
+    color: #00b894;
+}
