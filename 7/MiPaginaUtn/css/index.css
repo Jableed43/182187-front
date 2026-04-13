@@ -1,0 +1,268 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+body,header
+{
+    background-color: #464d5d;
+    margin: 0;
+    box-shadow: #2d3852 0px 4px 4px;
+}
+main 
+{
+    background-color: white;
+}
+h1,
+h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #b79067;
+    text-align: center;
+    font-weight: 400;
+    font-size: 70px;
+}
+h3
+{
+ font-family: 'Great Vibes', cursive;
+    color: #b79067;
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+}
+hr
+{
+    border: 0.5px solid #d1cecb;
+    width: 90%;
+    margin: 20px auto;
+}
+.subtitulo {
+    font-family: "Arimo", sans-serif;
+    color: #b79067;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+p {
+    font-family: "Arimo", sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+.hero {
+  position: relative;
+  height: 80vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  /* Imagen de fondo */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/imagen2.png') no-repeat center center/cover;
+  background-attachment: fixed; 
+  overflow: hidden;
+}
+
+.hero-content {
+  padding: 20px;
+  /* Aplicamos la animación */
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Estilo de los botones */
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05); /* Efecto de pulso al pasar el mouse */
+}
+
+/* Definición de la animación */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px); /* Empieza un poco más abajo */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Sube a su posición original */
+  }
+}
+
+.contenedor-botones {
+  display: flex;
+  gap: 20px; /* espacio entre botones */
+    justify-content: center; /* centra los botones horizontalmente */
+}
+.presentacion
+{
+  margin: 0;
+  padding: 0;
+  background-color: #464d5d;
+  position: relative;
+}
+.boton {
+  text-decoration: none;
+  padding: 15px 30px;/*hace el botón más grande*/
+  border-radius: 12px;
+  font-family: "Arimo", sans-serif;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+/* Botón marrón */
+.boton-1 {
+  background-color: #b89264;
+  color: white;
+}
+
+.boton-1:hover {
+  background-color: #a07d55;
+}
+
+/* Botón blanco con borde verde */
+.boton-2 {
+  background-color:#ebff00;
+  color:  #464d5d;
+  border: 2px solid #ebff00;
+}
+
+.boton-2:hover {
+  background-color: #d4ff00;
+}
+.boton-3 {
+  background-color: #464d5d;
+  color: #b79067;
+  border: 2px solid #f8ffa8;
+}
+.boton-3:hover {
+  background-color: #464d5d;
+  color: #ebff00;
+}
+.virtudes
+{
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  gap: 40px;
+}
+.tarjeta-virtud
+{
+  color: white;
+  background-color: #f8ffa8;
+  padding: 40px;
+  border-radius: 15px;
+  width: 40%;
+  position: relative;
+  z-index: 1;
+}
+.tarjeta-virtud::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 100%;
+  height: 100%;
+  background-color: #464d5d;
+  border-radius: 15px;
+  z-index: -1;
+}
+.tarjeta-virtud ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tarjeta-virtud li {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.tarjeta-virtud li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #ebff00;
+}
+.pvirtud
+{
+ font-family: "Arimo", sans-serif;
+    color: #464d5d;
+    text-align:left;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.mapa-contenedor {
+  text-align: center;
+  margin: 50px 0;
+  font-family:"Arimo", sans-serif; /* tu tipografía */
+}
+
+.mapa-contenedor h2 {
+  color: #464d5d;
+  margin-bottom: 10px;
+}
+
+.mapa-contenedor p {
+  color: #b79067;
+  margin-bottom: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial; /* tu tipografía */
+}
+
+/* encabezado */
+th {
+  background-color: #464d5d; 
+  color: white;
+  padding: 15px;
+}
+
+/* celdas */
+td {
+    color: #b79067;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* filas */
+tr {
+  transition: 0.3s;
+}
+
+/* hover en fila */
+tbody tr:hover {
+  background-color: #f3f0ff;
+}
+
+/* link ocupa toda la fila */
+tr a {
+  text-decoration: none;
+  color: #ebff00;
+  display: block;
+}
+

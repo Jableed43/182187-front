@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/login-registro/registrarse.css">
+    <link rel="stylesheet" href="../../css/menu.css">
+    <title>Registrarse</title>
+</head>
+
+<body>
+    <header>
+        <h1>M&L</h1>
+        <p class="subtitulo">Tu mejor version todos los dias</p>
+        <hr>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../perfumes.html">Perfumes</a></li>
+            <li><a href="../accesorios.html">Accesorios</a></li>
+            <li><a href="../velas.html">Velas</a></li>
+            <li><a href="../cuidadosdiarios.html">Cuidados Diarios-Natura</a></li>
+            <li><a href="../quienessomos.html">Quienes Somos</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+            <li><a href="#">Registrarse</a></li>
+            <li><a href="iniciarsesion.html">Iniciar Sesión</a></li>
+            <img src="../../img/imagen1.svg" alt="Logo de M&L" class="logo">
+        </ul>
+    </nav>
+    <h2>Registrarse</h2>
+    <div class="contenedor-login">
+        <div class="formulario">
+            <form>
+                <div class="input-group">
+                    <label>Nombre:</label>
+                    <input type="text" placeholder="ingresa tu nombre">
+                </div>
+                <div class="input-group">
+                    <label>Apellido:</label>
+                    <input type="text" placeholder="ingresa tu apellido">
+                </div>
+                <div class="input-group">
+                    <label>Fecha de Nacimiento:</label>
+                    <input type="date">
+                </div>
+                <div class="input-group">
+                    <label>Email:</label>
+                    <input type="email" placeholder="ingresa tu email">
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="ingresa tu contraseña">
+                </div>
+                <div class="input-group">
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="confirma tu contraseña">
+                </div>
+
+                <div class="grupo-genero">
+                    <label class="titulo-genero">Género:</label>
+                    <div class="opciones-genero">
+                        <input type="radio" id="g-masc" name="genero" value="m">
+                        <label for="g-masc">Masculino</label>
+
+                        <input type="radio" id="g-fem" name="genero" value="f">
+                        <label for="g-fem">Femenino</label>
+
+                        <input type="radio" id="g-otro" name="genero" value="o">
+                        <label for="g-otro">Otro</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-signup">Registrarse</button>
+                
+                <div class="social-contenedor">
+                    <button type="button" class="social-btn">
+                        <img src="google-icon.png" alt=""> Google
+                    </button>
+                    <button type="button" class="social-btn">
+                        <img src="apple-icon.png" alt=""> Apple
+                    </button>
+                </div>
+            </form>
+            <p class="footer-form">¿Ya estás registrado? <a class="afooter" href="iniciarsesion.html">Inicia Sesión</a>
+            </p>
+        </div>
+        <div class="image-section"></div>
+    </div>
+    <div class="image-section"></div>
+</body>
+
+</html>

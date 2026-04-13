@@ -1,0 +1,47 @@
+
+body,header
+{
+    background-color: #464d5d;
+    margin: 0;
+}
+main 
+{
+    background-color: white;
+}
+h1,
+h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #b79067;
+    text-align: center;
+    font-weight: 400;
+    font-size: 70px;
+}
+h3
+{
+ font-family: 'Great Vibes', cursive;
+    color: #b79067;
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+}
+hr
+{
+    border: 0.5px solid #d1cecb;
+    width: 90%;
+    margin: 20px auto;
+}
+.subtitulo {
+    font-family: "Arimo", sans-serif;
+    color: #b79067;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+p {
+    font-family: "Arimo", sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}

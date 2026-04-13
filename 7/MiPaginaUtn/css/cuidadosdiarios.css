@@ -1,0 +1,125 @@
+
+*
+{
+box-sizing: border-box;
+}
+body,header
+{
+    background-color: #464d5d;
+    margin: 0;
+}
+main 
+{
+    background-color: white;
+}
+h1,
+h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #b79067;
+    text-align: center;
+    font-weight: 400;
+    font-size: 70px;
+}
+h3
+{
+ font-family: 'Great Vibes', cursive;
+    color: #b79067;
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+}
+hr
+{
+    border: 0.5px solid #d1cecb;
+    width: 90%;
+    margin: 20px auto;
+}
+.subtitulo {
+    font-family: "Arimo", sans-serif;
+    color: #b79067;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+p {
+    font-family: "Arimo", sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+.contenedor-producto
+{
+display: grid;
+grid-template-rows: auto;
+  gap: 20px;
+  padding: 30px;
+  background-color: #f3f4f6;
+}
+.tarjeta-producto{
+width: 50%;
+  background: #464d5d;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, box-shadow 0.2s ease;
+  display: flex;
+flex-direction: column;
+}
+
+.tarjeta-producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.imagen-producto {
+  position: relative;
+  height: 200px;
+}
+
+.imagen-producto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Clave: la imagen siempre queda bien */
+}
+.categoria{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.producto-info {
+  padding: 20px;
+  flex-grow: 1; /* Empuja el footer hacia abajo si hay poco texto */
+  display: flex;
+  flex-direction: column;
+}
+
+.producto-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 15px;
+}
+
+.precio {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #b79067;
+}
+
+.agregar-carrito {
+  background: #464d5d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}

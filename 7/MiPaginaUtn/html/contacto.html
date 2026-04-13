@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <title>Contacto</title>
+</head>
+<body> 
+    <header>
+        <h1>M&L</h1>
+        <p class="subtitulo">Tu mejor version todos los dias</p>
+        <hr>
+    </header>
+     <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfumes.html">Perfumes</a></li>
+                <li><a href="accesorios.html">Accesorios</a></li>
+                <li><a href="velas.html">Velas</a></li>
+                <li><a href="cuidadosdiarios.html">Cuidados Diarios-Natura</a></li>
+                <li><a href="quienessomos.html">Quienes Somos</a></li>
+                <li><a href="#">Contacto</a></li>
+                  <li><a href="../html/login-registro/registrarse.html">Registrarse</a></li>
+                <li><a href="../html/login-registro/iniciarsesion.html">Iniciar Sesión</a></li> 
+           <img src="../img/imagen1.svg" alt="Logo de M&L" class="logo">
+            </ul>
+               
+        </nav>
+    <h2>Contacto</h2>
+    <p>Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros.</p>
+    <form action="#" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+       <p>Seleccione su genero:</p>
+         <input type="radio" id="masculino" name="genero" value="m" />
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="genero" value="f" />
+        <label for="femenino">Femenino</label>
+         <input type="radio" id="otro" name="genero" value="f" />
+        <label for="otro">Prefiero no decirlo</label>
+    </form>
+</body>
+</html>

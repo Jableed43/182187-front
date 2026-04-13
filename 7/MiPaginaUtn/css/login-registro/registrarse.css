@@ -1,0 +1,148 @@
+*
+{
+    box-sizing: border-box;
+}
+body,header
+{
+    background-color: #464d5d;
+    margin: 0;
+}
+main 
+{
+    background-color: white;
+}
+h1
+{
+    font-family: 'Great Vibes', cursive;
+    color: #b79067;
+    text-align: center;
+    font-weight: 400;
+    font-size: 70px;
+}
+h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #b79067;
+    text-align: center;
+    font-weight: 400;
+    font-size: 70px;
+    margin: 30px;
+}
+h3
+{
+ font-family: 'Great Vibes', cursive;
+    color: #b79067;
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+}
+hr
+{
+    border: 0.5px solid #d1cecb;
+    width: 90%;
+    margin: 20px auto;
+}
+.subtitulo {
+    font-family: "Arimo", sans-serif;
+    color: #b79067;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+p {
+    font-family: "Arimo", sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+.contenedor-login
+{
+    background-color: #ffffff;
+    display: flex;
+    height: 100vh; /* Ocupa todo el alto de la pantalla */
+    font-family: Arial, sans-serif
+}
+.formulario, .image-section {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.formulario {
+    padding: 0 10%; /* Espaciado lateral para que el form no toque los bordes */
+}
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.input-group
+{
+    margin-bottom: 8px;
+}
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.social-login
+{
+    width: 100%;
+    padding: 12px;
+    background-color: #3a5a40; /* Verde oscuro similar al de la imagen */
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.social-contenedor
+{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.social-btn
+{
+    width: 100%;
+    padding: 12px;
+    background-color: #ebff00; /* Verde oscuro similar al de la imagen */
+    color: #464d5d;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-signup
+{
+    width: 100%;
+    padding: 12px;
+    background-color: #464d5d; /* Verde oscuro similar al de la imagen */
+    color: #ebff00;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.footer-form
+{
+font-family: 'Great Vibes', cursive;
+    color: #b79067;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+}
+.afooter
+{
+    padding: 10px;
+    color: #b79067;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+.image-section {
+    background-image: url('../../img/Tarjeta de presentación psicóloga floral beige.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px 0 0 40px; /* Bordes redondeados del lado izquierdo */
+}
