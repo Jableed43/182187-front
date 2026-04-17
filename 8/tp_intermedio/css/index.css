@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #f5f5f5;
     min-height: 100vh;
     display: flex;
@@ -12,73 +12,79 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{
+main>h1 {
+    margin: 2rem 0;
+}
+
+h1 {
     text-align: center;
 }
 
-header{
+header {
     background-color: #810208;
     padding: 1rem 2rem;
 }
 
-header nav{
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo{
+.logo {
     width: 100px;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
     gap: 1.5rem;
 }
 
-header nav ul li, footer ul li{
+header nav ul li,
+footer ul li {
     list-style: none;
 }
 
-header nav ul li a, footer a{
+header nav ul li a,
+footer a {
     text-decoration: none;
     font-size: 1.2rem;
     color: #ffffff;
 }
 
-.carousel{
+.carousel {
     padding: 0 5rem;
 }
 
-.carousel-item img{
+.carousel-item img {
     height: 70vh;
     margin: auto;
 }
 
-.carousel-caption{
+.carousel-caption {
     background-color: rgba(0.1, 0.1, 0.1, 0.5);
 }
 
-.carousel button{
+.carousel button {
     background: red;
     height: 40px;
     width: auto;
     margin: auto;
 }
 
-.reasons-section{
+.reasons-section {
     max-width: 1200px;
     margin: 3rem auto;
     text-align: center;
 }
 
-.reasons-container{
+.reasons-container {
     display: flex;
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.reasons-card{
+.reasons-card {
     background-color: rgb(128 2 8);
     padding: 2rem;
     border-radius: 8px;
@@ -88,7 +94,7 @@ header nav ul li a, footer a{
     color: #f5f5f5;
 }
 
-footer{
+footer {
     background-color: #810208;
     color: white;
     text-align: center;
@@ -96,8 +102,71 @@ footer{
     margin-top: auto;
 }
 
-.footer-nav{
+.footer-nav {
     gap: 1.5rem;
     display: flex;
     justify-content: center;
+}
+
+/* Esto significa el ancho minimo en el que deben funcionar estas reglas css es... 0px */
+/* Estos estilos desde el minimo 0 se cumplen hasta que otra regla diga lo contrario */
+/* max marca el tope */
+@media(min-width: 0px) and (max-width: 768px) {
+    .reasons-container {
+        flex-direction: column;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header nav ul li a,
+    footer a {
+        font-size: 1rem;
+    }
+
+    ol,
+    ul {
+        margin-bottom: 0 !important;
+        padding-left: 0;
+    }
+
+    .carousel-item img {
+        height: 40vh;
+        width: 100%;
+    }
+
+    .carousel {
+        padding: 0 2rem;
+    }
+
+    .reasons-section, .gallery {
+        padding: 0 2rem;
+    }
+
+    .footer-nav {
+        padding: 1rem 0;
+    }
+}
+
+@media (min-width: 769px) {
+
+    .reasons-container {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+        .reasons-section, .catalogo .gallery {
+        margin: 3rem;
+    }
+
+        .carousel-item img {
+        width: 90%;
+    }
 }

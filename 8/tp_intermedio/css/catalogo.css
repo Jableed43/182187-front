@@ -1,6 +1,6 @@
 .gallery{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+    gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
@@ -19,3 +19,8 @@
     transform: scale(1.05)
 }
 
+@media(min-width: 0px){
+    .gallery img{
+        object-fit: contain;
+    }
+}
