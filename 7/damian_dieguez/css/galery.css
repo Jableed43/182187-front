@@ -1,0 +1,5 @@
+.galery {
+    display: flex;
+    height: 40vh;
+    justify-content: space-around;
+}

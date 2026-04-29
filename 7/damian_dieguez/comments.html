@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PILI JOOKS</title>
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="sekuya-regular">PILI JOOKS</h1>
+        <nav>
+            <ul class="listmenu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="multimedia.html">Multimedia </a></li>
+                <li><a href="members.html">Integrantes</a></li>
+                <li><a href="galery.html">Galeria</a></li>
+                <li><a href="comments.html">Comentarios</a></li>
+            </ul>
+        </nav>
+        <hr />
+    </header>
+    <main>
+
+        <section class="form-container">
+            <form action="#" method="get">
+                <div class="form-group">
+                    <label for="nombre"> Nombre: </label>
+                    <input type="text" name="nombre" />
+                </div>
+                <div class="form-group">
+                    <label for="apellido"> Apellido: </label>
+                    <input type="text" name="apellido" />
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email"> Email: </label>
+                    <input type="email" name="email" />
+                </div>
+                <div class="form-group">
+                    <label for="fecha-nacimiento"> Fecha nacimiento </label>
+                    <input type="date" />
+                </div>
+                <div class="form-group-radio">
+                    <p>Género:</p>
+                    <input type="radio" id="g-masc" name="genero" value="m" />
+                    <label for="g-masc">Masculino</label>
+                    <input type="radio" id="g-fem" name="genero" value="f" />
+                    <label for="g-fem">Femenino</label>
+                    <input type="radio" id="g-nobin" name="genero" value="n" />
+                    <label for="g-nobin">No binario</label>
+                    <input type="radio" id="g-indef" name="genero" value="i" />
+                    <label for="g-indef">Prefiero no decir</label>
+                </div>
+                <div class="form-group">
+                    <label for="usr-msg">Mensaje:</label> <br />
+                    <textarea rows="5" cols="60 id=" usr-msg" name="mensaje" rows="4" cols="60"
+                        placeholder="Déjanos tu mensaje..."></textarea>
+                </div>
+                <div class="form-buttons">
+                    <button class="btn-submit" type="submit">Enviar</button>
+                    <button class="btn-clear" type="clear">Limpiar formulario</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>© 2026 · Pili Jooks</p>
+    </footer>
+</body>
+
+</html>
