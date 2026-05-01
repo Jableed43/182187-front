@@ -4,7 +4,7 @@
 // inicializacion, creas la variable
 var colorTaza
 
-// invocacion, se llama por su nombre para utilizarla (operarla o leerla)
+// invocacion o llamado, se llama por su nombre para utilizarla (operarla o leerla)
 colorTaza
 
 // asignacion
