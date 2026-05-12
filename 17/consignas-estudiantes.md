@@ -1,4 +1,4 @@
-# 🚀 Trabajo Práctico: Dominando el DOM con JavaScript
+# 🚀 Trabajo de clase: Dominando el DOM con JavaScript
 
 ¡Bienvenido al laboratorio de manipulación del DOM! En esta sesión, dejarás de escribir HTML estático para empezar a crear interfaces que **reaccionan** al usuario.
 
@@ -11,8 +11,7 @@ Desarrollar habilidades de selección, modificación de estilos, gestión de cla
 
 ### 1. El Interruptor Inteligente (`/dom/classlist`)
 *   **Misión:** Aprender a cambiar el "estado" de un componente.
-*   **Consigna:** Implementa un botón que, al ser clickeado, alterne una clase CSS en un elemento de la página. 
-*   **Reto:** El elemento debe cambiar visualmente (color, borde o visibilidad) cada vez que toques el botón.
+*   **Consigna:** Implementa un input de texto que modifique un parrafo.
 *   **Conceptos clave:** `querySelector`, `addEventListener('click', ...)` y `.classList.toggle()`.
 
 ### 2. Editor en Tiempo Real (`/dom/input-full`)

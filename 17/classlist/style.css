@@ -1,0 +1,10 @@
+.red{
+    font-size: 2rem;
+    color: red;
+}
+
+.blue{
+    color: rgb(21, 76, 170);
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
