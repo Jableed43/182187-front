@@ -16,7 +16,7 @@ Desarrollar habilidades de selección, modificación de estilos, gestión de cla
 
 ### 2. Editor en Tiempo Real (`/dom/input-full`)
 *   **Misión:** Capturar datos del usuario y ver resultados inmediatos.
-*   **Consigna:** Crea un formulario con inputs de tipo texto y color. Lo que el usuario escriba debe reflejarse en un título en tiempo real, y el color elegido debe aplicarse al fondo de una tarjeta.
+*   **Consigna:** Crea un formulario con inputs de tipo texto y color. Lo que el usuario escriba debe reflejarse en un título en tiempo real, y el color elegido debe aplicarse al texto.
 *   **Conceptos clave:** Evento `input`, propiedad `.value` y manipulación de `.style` (recordar el uso de *camelCase* como `backgroundColor`).
 
 ### 3. Fábrica Dinámica de Nodos (`/dom/creacion-dinamica`)
