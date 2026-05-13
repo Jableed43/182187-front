@@ -2,6 +2,10 @@
 // addEventListener significa escucha de eventos, esto significa que va a estar pendiente de cierto evento y puede ejecutar codigo cuando el evento sucede
 // DOMContentLoaded es el evento -> espera que se cargue el contenido en el dom
 
+// function agregarBold2(texto, classSelected) {
+//         texto.classList.add(`${classSelected}`)
+//     }
+
 document.addEventListener("DOMContentLoaded", function () {
     // Usar selectores para traer los elementos con los que vamos a trabajar
     // querySelector es una funcion que permite seleccionar cualquier elemento de nuestro DOM, etiquetas, clases, id's
@@ -48,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // el evento mouseout significa quitar el mouse de encima
     texto.addEventListener("mouseout", quitarBold)
 
+    // Siempre necesita una funcion el addevent listener
     // texto.addEventListener("mouseout", function quitarBold() {
     //     texto.classList.remove("blue")
     // })

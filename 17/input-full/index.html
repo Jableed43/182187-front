@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form>
+        <label for="textoInput">Texto:</label>
+        <input id="textoInput" type="text">
+
+        <br>
+
+        <label for="colorInput">Color:</label>
+        <input id="colorInput" type="color">
+
+        <br>
+
+        <label for="fontSizeInput">Tamaño de fuente:</label>
+        <input id="fontSizeInput" type="number" min="1" value="16" >
+
+        <br>
+
+        <label for="textDecorationInput">Decoración del texto:</label>
+        <select id="textDecorationInput">
+            <option value="none">Ninguno</option>
+            <option value="underline">Subrayado</option>
+            <option value="overline">Sobrerayado</option>
+            <option value="line-through">Techado</option>
+        </select>
+
+        <br>
+
+        <label for="fontFamilyInput">Tipo de fuente:</label>
+        <select id="fontFamilyInput">
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Giorgia">Giorgia</option>
+        </select>
+
+        <br>
+
+        <label for="textAlignInput">Alineacion del texto:</label>
+        <select id="textAlignInput">
+            <option value="left">Izquierda</option>
+            <option value="right">derecha</option>
+            <option value="center">Centro</option>
+        </select>
+
+        <br>
+
+        <label for="letterSpacingInput">Espaciado entre letras (px):</label>
+        <input id="letterSpacingInput" type="number" min="0" value="0" >
+
+        <br>
+
+        <label for="boldCheckbox">Negrita</label>
+        <input type="checkbox" id="boldCheckbox">
+<br>
+        <label for="italicCheckbox">Cursiva</label>
+        <input type="checkbox" id="italicCheckbox">
+<br>
+        <label for="uppercaseCheckbox">Mayusculas</label>
+        <input type="checkbox" id="uppercaseCheckbox">
+<br>
+        <label for="lowercaseCheckbox">Minusculas</label>
+        <input type="checkbox" id="lowercaseCheckbox">
+
+        <br>
+
+        <p id="resultado"></p>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>

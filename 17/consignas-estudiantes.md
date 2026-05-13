@@ -11,7 +11,7 @@ Desarrollar habilidades de selección, modificación de estilos, gestión de cla
 
 ### 1. El Interruptor Inteligente (`/dom/classlist`)
 *   **Misión:** Aprender a cambiar el "estado" de un componente.
-*   **Consigna:** Implementa un input de texto que modifique un parrafo.
+*   **Consigna:** Implementa un input de texto que modifique un parrafo, tambien implementa el evento de click y eventos de mouse tipo hover.
 *   **Conceptos clave:** `querySelector`, `addEventListener('click', ...)` y `.classList.toggle()`.
 
 ### 2. Editor en Tiempo Real (`/dom/input-full`)
