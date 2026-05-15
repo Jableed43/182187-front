@@ -23,7 +23,7 @@ function createDeleteButton() {
         setTimeout(() => {
             this.parentNode.remove()
             // Borra la tarea y actualizar el contador de tareas
-            // updateTaskCounter()
+            updateTaskCounter()
         }, 300)
         
     })
@@ -38,9 +38,12 @@ function createTaskSpan(text) {
     taskSpan.textContent = text;
     taskSpan.className = "task-text"
 
+    // Estos son dos caminos caminos posibles en el flujo, por click o por teclado
+
     taskSpan.addEventListener("click", function() {
         // si no tenes la clase completed la agrega, si la tenes la quita
-        this.parentNode.classList.toggle("completed")
+        this.parentNode.classList.toggle('completed');
+        updateTaskCounter()
     })
 
     // Soporte para teclado
@@ -53,9 +56,39 @@ function createTaskSpan(text) {
             evento.preventDefault()
             // añade o quita la clase completed
             this.parentNode.classList.toggle("completed")
+            updateTaskCounter()
         }
     })
     return taskSpan
+}
+
+//4. Funcion para actualizar el contador de tareas
+// Esta tarea sirve para aprender a maquetar desde js
+function updateTaskCounter() {
+    // Largo total de los elementos hijos de la lista de tareas
+    const totalTasks = taskList.children.length;
+
+    // Como sabemos cuales tareas estan completadas?
+    const completedTasks = taskList.querySelectorAll(".completed").length;
+
+    // Crear o actualizar contador
+    let counter = document.getElementById("taskCounter")
+    // Si no lo tenemos aun lo creamos
+    if(!counter){
+        counter = document.createElement("div")
+        counter.id = "taskCounter"
+        counter.className = "task-counter"
+        // añadimos dentro de la clase container el counter antes de la taskList
+        document.querySelector(".container").insertBefore(counter, taskList)
+    }
+
+    // Vamos a maquedar el div!!
+    // innerHTML es literalmente el HTML que querés
+    counter.innerHTML = `
+        <span>Total: ${totalTasks} </span>
+        <span>completadas: ${completedTasks} </span>
+        <span>Pendientes: ${totalTasks - completedTasks} </span>
+    `
 }
 
 function agregarTarea() {
@@ -67,11 +100,11 @@ function agregarTarea() {
     listItem.className = "task-item"
 
     // tenemos que rellenar el listItem con los elementos creados, como el boton de eliminar
-    // Creamos el deleteBtn con la funcionalidad y los estilos
-    const deleteBtn = createDeleteButton()
     // Recordar pasarle el argumento al createTaskSpan
     const taskSpan = createTaskSpan(taskText)
-
+    // Creamos el deleteBtn con la funcionalidad y los estilos
+    const deleteBtn = createDeleteButton()
+    
     // EL ORDEN EN QUE APPENDEAS LOS HIJOS ES EL ORDEN DE ESCRITURA EN EL HTML
     // añadimos texto de la tarea
     listItem.appendChild(taskSpan)
@@ -87,6 +120,9 @@ function agregarTarea() {
     // no pierde el foco del input
     taskInput.focus()
 
+    // Actualizar contador
+    updateTaskCounter()
+
     // Agregar animacion de entrada
     listItem.style.opacity = "0"
     listItem.style.transform = "translateY(-10px)"
@@ -98,6 +134,8 @@ function agregarTarea() {
     }, 10)
 }
 
+
+
 addTaskBtn.addEventListener("click", agregarTarea)
 
 
@@ -105,3 +143,5 @@ addTaskBtn.addEventListener("click", agregarTarea)
 document.addEventListener("DOMContentLoaded", function () {
     
 })
+
+// Para la proxima clase -> limpiar completadas y validar el input
