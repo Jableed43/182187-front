@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Muestra el valor numerico de los likes
     const likeCountDisplay = document.getElementById("likeCount")
     // resetea el conteo de likes
-    const resetLikeButton = document.getElementById("resetLikeButton")
+    const resetLikeCount = document.getElementById("resetLikeButton")
 
     // Carga los likes si empezas de 0 o refrescas la pantalla
     // va a buscarlos al localStorage y los muestra en el span likeCountDisplay
@@ -35,24 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("myLikeCount", likeCounter)
     }
 
-//     Manejar el clic del botón:
-// ■ Añade un "escuchador" de eventos
-// (addEventListener) al likeButton para el
-// evento 'click'.
-// ■ Dentro de la función que se ejecuta al hacer clic:
-// ■ Incrementa tu variable likeCounter en 1.
-// ■ Actualiza el textContent de
-// likeCountDisplay con el nuevo valor de
-// likeCounter.
-// ■ Llama a tu función saveLikes() para
-// guardar el nuevo valor en localStorage.
-// ■ Efecto "pop" (opcional pero divertido): Añade
-// la clase pop a likeCountDisplay, usa
-// setTimeout() para esperar un momento
-// (ej. 200 milisegundos) y luego quita la clase
-// pop. Esto hará que el número se agrande y
-// vuelva a su tamaño normal.
-
     likeButton.addEventListener("click", () => {
         // likeCounter = likeCounter + 1
         // incrementamos el likeCounter en 1
@@ -73,6 +55,21 @@ document.addEventListener("DOMContentLoaded", () => {
             likeCountDisplay.classList.remove("pop")
         }, 200)
 
-
+        // setTimeout(function(){
+        //     likeCountDisplay.classList.remove("pop")
+        // }, 200)
     })
+
+    resetLikeCount.addEventListener("click", () => {
+        likeCounter = 0
+        likeCountDisplay.textContent = likeCounter
+        // saveLikes guarda el cambio de que tenemos 0 likes
+        saveLikes()
+        // carga la cantidad de likes que tenemos que es 0
+        loadLikes()
+    })
+
+    // Buscamos sincronizar la variable likeCounter, con el span del valor likeCountDisplay con el valor guardado en localStorage llamado myLikeCount
+
+    loadLikes()
 })
