@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5; /* Fondo suave */
+    color: #333;
+    text-align: center;
+}
+
+#likeButton{
+    border: none;
+    background-color: transparent;
+}
+
+.like-container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+h1 {
+    color: #34495e;
+    margin-bottom: 25px;
+    font-size: 2.2em;
+}
+
+.like-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espacio entre el botón y el contador */
+    margin-bottom: 30px;
+}
+
+/* Estilos para el botón de "Me Gusta" (corazón o imagen) */
+.like-button {
+    font-size: 3.5em; /* Tamaño grande para el icono */
+    color: #e74c3c; /* Color rojo de corazón */
+    cursor: pointer;
+    transition: transform 0.2s ease-out, color 0.2s ease-out; /* Efectos suaves */
+}
+
+/* Si usas una imagen en lugar de Font Awesome, descomenta esto */
+/*
+.like-button {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+}
+*/
+
+.like-button:hover {
+    transform: scale(1.15); /* Se agranda un poco al pasar el ratón */
+    color: #c0392b; /* Se oscurece un poco al pasar el ratón */
+}
+
+.like-button:active {
+    transform: scale(0.95); /* Se encoge un poco al hacer clic */
+}
+
+/* Estilos para el contador de "Me Gusta" */
+.like-count {
+    font-size: 4em; /* Tamaño grande del número */
+    font-weight: bold;
+    color: #2ecc71; /* Verde para el número */
+    transition: transform 0.1s ease-out, color 0.1s ease-out; /* Para el efecto "pop" */
+}
+
+/* Clase para el efecto "pop" al incrementar el contador */
+.like-count.pop {
+    transform: scale(1.2); /* Se agranda al hacer clic */
+    color: #27ae60; /* Se hace un verde más oscuro */
+}
+
+p {
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
