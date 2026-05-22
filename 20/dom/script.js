@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function loadLikes() {
         // Poca informacion, guardada localmente y obtenida globalmente
         const savedCount = localStorage.getItem("myLikeCount")
+        console.log(typeof savedCount)
         // Si savedCount existe (es decir no es nulo)
         // Ademas reviso si realmente es un dato valido
         // porque incluso si es string lo puedo convertir a numero
