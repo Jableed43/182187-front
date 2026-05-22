@@ -4,9 +4,12 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
+// Un componente se escribe una sola vez y lo usas todas las veces que quieras
+// Y todas esas copias son independientes
 function App() {
   const [count, setCount] = useState(0)
-
+ // Aca se escribe la mayoria del codigo de js
+ console.log("Hola clase!")
   return (
     <>
       <section id="center">
