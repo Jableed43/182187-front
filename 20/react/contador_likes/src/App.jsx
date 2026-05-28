@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -7,117 +7,48 @@ import './App.css'
 // Un componente se escribe una sola vez y lo usas todas las veces que quieras
 // Y todas esas copias son independientes
 function App() {
-  const [count, setCount] = useState(0)
+  // Estado
+  //  const [estado, setEstado]
+  // el setEstado es la unica manera de modificar el estado
+  // useState(valorInicialDelEstado)
+  const [likeCounter, setLikeCounter] = useState(0)
+
  // Aca se escribe la mayoria del codigo de js
- console.log("Hola clase!")
+ // storageName es el nombre del espacio en memoria de localStorage que estamos utilizando
+  const load = (storageName, setter) => {
+    // Esta funcion sincroniza el localStorage con el estado
+    // Trae la key guardada de localstorage
+    const saved = localStorage.getItem(storageName)
+    if(saved !== null){
+      // se asegura que no esté vacia
+      setter(parseInt(saved))
+      // guarda el valor en el estado asegurando que sea numero
+    }
+  }
+
+  // Es una funcion, que cuando la pagina se carga, ejecuta codigo
+  // ante ciertos eventos/cambios se podria volver a disparar la ejecucion del codigo
+  useEffect(() => {
+    load("myLikeCount", setLikeCounter)
+  }, [])
+
+
+
   return (
+    // Fragment sirve para escribir codigo
+    // Todo componente dentro del return si es mas de uno, obligatoriamente tiene que tener un elemento que lo encierre
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+       <div className="like-counter" >
+        <h1>¡Dale me gusta!</h1>
+        <div className="like-area">
+            <button id="likeButton" > <i className="fa-solid fa-heart like-button"></i> </button>
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+            <span className="like-count" id="likeCount">{likeCounter}</span>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        <button id="resetLikeButton" >Resetear</button>
+        <small> Haz clic en el corazón para aumentar el contador </small>
+    </div>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
     </>
   )
 }
