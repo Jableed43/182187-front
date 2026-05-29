@@ -1,7 +1,4 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 
 // Un componente se escribe una sola vez y lo usas todas las veces que quieras
@@ -26,13 +23,34 @@ function App() {
     }
   }
 
+  // Metodo generico para guardar en localStorage
+  const save = (storageName, count) => {
+    localStorage.setItem(storageName, count)
+  }
+
+  // La funcion del contador
+  // handlers son funciones relacionadas a interacciones/ eventos que disparan acciones
+  const handleLikeClick = () => {
+    // Al valor actual le suma + 1
+    const newCount = likeCounter + 1
+    // Al valor actual lo usa para setear el estado
+    setLikeCounter(newCount)
+    // Guardamos en localStorage el nuevo valor del contador
+    save("myLikeCount", newCount)
+  }
+
+  // La funcion del reset
+  const handleReset = () => {
+    const newCount = 0
+    setLikeCounter(newCount)
+    save("myLikeCount", newCount)
+  }
+
   // Es una funcion, que cuando la pagina se carga, ejecuta codigo
   // ante ciertos eventos/cambios se podria volver a disparar la ejecucion del codigo
   useEffect(() => {
     load("myLikeCount", setLikeCounter)
   }, [])
-
-
 
   return (
     // Fragment sirve para escribir codigo
@@ -41,11 +59,11 @@ function App() {
        <div className="like-counter" >
         <h1>¡Dale me gusta!</h1>
         <div className="like-area">
-            <button id="likeButton" > <i className="fa-solid fa-heart like-button"></i> </button>
+            <button id="likeButton" onClick={handleLikeClick} > <i className="fa-solid fa-heart like-button"></i> </button>
 
             <span className="like-count" id="likeCount">{likeCounter}</span>
         </div>
-        <button id="resetLikeButton" >Resetear</button>
+        <button id="resetLikeButton" onClick={handleReset} >Resetear</button>
         <small> Haz clic en el corazón para aumentar el contador </small>
     </div>
 
