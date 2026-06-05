@@ -1,0 +1,21 @@
+/* Custom styles for api-rick-morty */
+
+.character-card {
+    min-width: 200px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.character-detail-card {
+    max-width: 700px;
+}
+
+.home-image {
+    max-width: 800px;
+    width: 100%;
+}
