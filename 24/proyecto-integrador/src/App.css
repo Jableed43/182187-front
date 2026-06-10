@@ -1,0 +1,37 @@
+/* Sirve para mandar abajo al footer aunque el contenido no tenga el largo suficiente */
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  color: var(--bs-secondary-color);
+}
+
+.navbar-brand{
+  color: var(--bs-secondary-color);
+}
+
+nav{
+  background-color: #2c7282;
+}
+
+body{
+  background: #B5E48C;
+background: -webkit-linear-gradient(90deg,rgba(181, 228, 140, 1) 0%, rgba(82, 182, 154, 1) 50%, rgba(24, 78, 119, 1) 100%);
+background: -moz-linear-gradient(90deg,rgba(181, 228, 140, 1) 0%, rgba(82, 182, 154, 1) 50%, rgba(24, 78, 119, 1) 100%);
+background: linear-gradient(90deg,rgba(181, 228, 140, 1) 0%, rgba(82, 182, 154, 1) 50%, rgba(24, 78, 119, 1) 100%);
+}
+
+.img-portada-container{
+  display: flex;
+}
+
+.img-portada{
+  width: 80vw;
+  margin: auto;
+  filter: contrast(0.9);
+  border-radius: 20px;
+}
+
+h1{
+  text-align: center;
+}
