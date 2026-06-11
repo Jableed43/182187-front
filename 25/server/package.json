@@ -1,0 +1,20 @@
+{
+  "name": "api-rest-server",
+  "version": "1.0.0",
+  "description": "Servidor local de API REST para desarrollo y enseñanza",
+  "main": "db.json",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3000 --host 0.0.0.0",
+    "dev": "json-server --watch db.json --port 3000 --host 0.0.0.0"
+  },
+  "keywords": [
+    "json-server",
+    "rest-api",
+    "mock-api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "auriculares bluetooth",
+      "price": 2499.99,
+      "profitRate": 1.21,
+      "description": "auriculares inalambricos con cancelacion activa de ruido y 30 horas de autonomia.",
+      "quantity": 45,
+      "status": "AVAILABLE",
+      "category": "65f8d0c2e391b1a0d83cf120",
+      "highlighted": true,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300"
+    },
+    {
+      "id": 2,
+      "name": "teclado mecanico rgb",
+      "price": 5800.00,
+      "profitRate": 1.25,
+      "description": "teclado mecanico layout español con switches red y retroiluminacion rgb configurable.",
+      "quantity": 20,
+      "status": "AVAILABLE",
+      "category": "65f8d0c2e391b1a0d83cf120",
+      "highlighted": true,
+      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=300"
+    },
+    {
+      "id": 3,
+      "name": "mouse gamer 16000 dpi",
+      "price": 3200.00,
+      "profitRate": 1.21,
+      "description": "mouse optico de alta precision para gaming con botones laterales programables.",
+      "quantity": 60,
+      "status": "AVAILABLE",
+      "category": "65f8d0c2e391b1a0d83cf120",
+      "highlighted": false,
+      "image": "https://images.unsplash.com/photo-1527698266440-12104e498b76?w=300"
+    },
+    {
+      "id": 4,
+      "name": "monitor 24 pulgadas full hd",
+      "price": 18500.00,
+      "profitRate": 1.21,
+      "description": "monitor ips con tasa de refresco de 75hz y bordes ultra delgados.",
+      "quantity": 15,
+      "status": "AVAILABLE",
+      "category": "65f8d0c2e391b1a0d83cf120",
+      "highlighted": true,
+      "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=300"
+    },
+    {
+      "id": 5,
+      "name": "soporte de aluminio para laptop",
+      "price": 1500.00,
+      "profitRate": 1.21,
+      "description": "soporte ergonomico y plegable compatible con laptops de hasta 17 pulgadas.",
+      "quantity": 120,
+      "status": "AVAILABLE",
+      "category": "65f8d0c2e391b1a0d83cf120",
+      "highlighted": false,
+      "image": "https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?w=300"
+    },
+    {
+      "id": 6,
+      "name": "cable hdmi 2.1 ultra high speed",
+      "price": 850.00,
+      "profitRate": 1.21,
+      "description": "cable hdmi con soporte para resoluciones 8k a 60hz y 4k a 120hz.",
+      "quantity": 200,
+      "status": "AVAILABLE",
+      "category": "65f8d0c2e391b1a0d83cf120",
+      "highlighted": false,
+      "image": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=300"
+    },
+    {
+      "id": 7,
+      "name": "cargador rapido usb-c 65w",
+      "price": 2800.00,
+      "profitRate": 1.21,
+      "description": "cargador de pared gan para carga rapida de celulares, tablets y laptops.",
+      "quantity": 80,
+      "status": "AVAILABLE",
+      "category": "65f8d0c2e391b1a0d83cf120",
+      "highlighted": true,
+      "image": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=300"
+    },
+    {
+      "id": 8,
+      "name": "pad de mouse xl antiderrapante",
+      "price": 1200.00,
+      "profitRate": 1.21,
+      "description": "alfombrilla de tela de tamaño extendido (900x400mm) con bordes cosidos.",
+      "quantity": 150,
+      "status": "AVAILABLE",
+      "category": "65f8d0c2e391b1a0d83cf120",
+      "highlighted": false,
+      "image": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=300"
+    },
+    {
+      "id": 9,
+      "name": "parlante bluetooth portatil",
+      "price": 4300.00,
+      "profitRate": 1.22,
+      "description": "parlante inalambrico resistente al agua ipx7 con sonido de alta fidelidad.",
+      "quantity": 35,
+      "status": "AVAILABLE",
+      "category": "65f8d0c2e391b1a0d83cf120",
+      "highlighted": true,
+      "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=300"
+    },
+    {
+      "id": 10,
+      "name": "memoria usb 128gb usb 3.2",
+      "price": 1400.00,
+      "profitRate": 1.21,
+      "description": "pendrive de metal ultra resistente con alta velocidad de lectura y escritura.",
+      "quantity": 110,
+      "status": "AVAILABLE",
+      "category": "65f8d0c2e391b1a0d83cf120",
+      "highlighted": false,
+      "image": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=300"
+    },
+    {
+      "id": 11,
+      "name": "disco solido externo ssd 1tb",
+      "price": 12500.00,
+      "profitRate": 1.21,
+      "description": "unidad de estado solido externa de alta velocidad de transferencia de datos.",
+      "quantity": 18,
+      "status": "AVAILABLE",
+      "category": "65f8d0c2e391b1a0d83cf120",
+      "highlighted": true,
+      "image": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=300"
+    },
+    {
+      "id": 12,
+      "name": "camara web hd 1080p",
+      "price": 3900.00,
+      "profitRate": 1.21,
+      "description": "webcam con microfono incorporado para videoconferencias y streaming.",
+      "quantity": 25,
+      "status": "AVAILABLE",
+      "category": "65f8d0c2e391b1a0d83cf120",
+      "highlighted": false,
+      "image": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=300"
+    },
+    {
+      "id": 13,
+      "name": "microfono de condensador usb",
+      "price": 6200.00,
+      "profitRate": 1.24,
+      "description": "microfono ideal para podcasts y streams con patron polar cardioide.",
+      "quantity": 12,
+      "status": "AVAILABLE",
+      "category": "65f8d0c2e391b1a0d83cf120",
+      "highlighted": true,
+      "image": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=300"
+    },
+    {
+      "id": 14,
+      "name": "luces led smart rgb",
+      "price": 1999.99,
+      "profitRate": 1.21,
+      "description": "tira de luces led inteligente controlable por aplicacion movil y asistentes de voz.",
+      "quantity": 90,
+      "status": "AVAILABLE",
+      "category": "65f8d0c2e391b1a0d83cf120",
+      "highlighted": false,
+      "image": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=300"
+    },
+    {
+      "id": 15,
+      "name": "mochila para laptop impermeable",
+      "price": 4500.00,
+      "profitRate": 1.21,
+      "description": "mochila con multiples compartimentos y puerto usb para carga externa.",
+      "quantity": 40,
+      "status": "AVAILABLE",
+      "category": "65f8d0c2e391b1a0d83cf120",
+      "highlighted": false,
+      "image": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=300"
+    },
+    {
+      "id": 16,
+      "name": "adaptador multi-puerto usb-c",
+      "price": 3100.00,
+      "profitRate": 1.21,
+      "description": "hub usb-c con salidas hdmi, usb 3.0 y lector de tarjetas sd.",
+      "quantity": 55,
+      "status": "AVAILABLE",
+      "category": "65f8d0c2e391b1a0d83cf120",
+      "highlighted": false,
+      "image": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=300"
+    },
+    {
+      "id": 17,
+      "name": "bateria portatil power bank 20000mah",
+      "price": 3800.00,
+      "profitRate": 1.21,
+      "description": "cargador portatil de alta capacidad con dos puertos de salida usb.",
+      "quantity": 70,
+      "status": "AVAILABLE",
+      "category": "65f8d0c2e391b1a0d83cf120",
+      "highlighted": false,
+      "image": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=300"
+    },
+    {
+      "id": 18,
+      "name": "tripode flexible para celular",
+      "price": 950.00,
+      "profitRate": 1.21,
+      "description": "tripode estilo pulpo articulado compatible con camaras y dispositivos moviles.",
+      "quantity": 110,
+      "status": "DISCONTINUED",
+      "category": "65f8d0c2e391b1a0d83cf120",
+      "highlighted": false,
+      "image": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=300"
+    },
+    {
+      "id": 19,
+      "name": "kit de limpieza de pantallas",
+      "price": 600.00,
+      "profitRate": 1.21,
+      "description": "incluye liquido limpiador biodegradable de 120ml y paño de microfibra.",
+      "quantity": 180,
+      "status": "AVAILABLE",
+      "category": "65f8d0c2e391b1a0d83cf120",
+      "highlighted": false,
+      "image": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=300"
+    },
+    {
+      "id": 20,
+      "name": "tarjeta micro sd 64gb ultra",
+      "price": 1100.00,
+      "profitRate": 1.21,
+      "description": "tarjeta de memoria clase 10 ideal para grabacion full hd en smartphones.",
+      "quantity": 130,
+      "status": "NOT_AVAILABLE",
+      "category": "65f8d0c2e391b1a0d83cf120",
+      "highlighted": false,
+      "image": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=300"
+    }
+  ],
+  "category": [
+    {
+      "id": "65f8d0c2e391b1a0d83cf120",
+      "name": "electronica"
+    }
+  ]
+}
