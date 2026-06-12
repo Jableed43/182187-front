@@ -1,4 +1,5 @@
 import useGetProducts from "../../hooks/products/useGetProducts"
+import ProductCard from "../ProductCard"
 
 function Products() {
   const {error, loading, products} = useGetProducts()
@@ -29,31 +30,7 @@ function Products() {
   return (
     <>
     <h1>Products</h1>
-    {/* // contenedor de las cards */}
-    <section style={{
-      display: "flex",
-      flexDirection: "row",
-      flexWrap: "wrap",
-      gap: "20px",
-      justifyContent: "center"
-    }}>
-      {/* // La mera card */}
-      { products.map((product) => (
-      // Este div se va a repetir por cada producto que posea
-      <div style={{
-        width: "200px",
-        border: "solid black",
-        textAlign: "center",
-        backgroundColor: "#d0d7d8",
-        display: "flex",
-        flexDirection: "column"
-      }} key={product.id} >
-        <h1> {product.name} </h1>
-      </div>
-
-      )) }
-
-    </section>
+    <ProductCard products={products} />
     </>
 
   )
