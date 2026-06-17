@@ -3,6 +3,7 @@ import App from './App'
 import Home from './components/pages/Home'
 import Products from './components/pages/Products'
 import CreateProductPage from './components/pages/CreateProductPage'
+import EditProductPage from './components/pages/EditProductPage'
 
 export const router = createBrowserRouter([
     {
@@ -22,6 +23,11 @@ export const router = createBrowserRouter([
             {
                 path: "/products/create",
                 element: <CreateProductPage />
+            },
+            {
+                // El :id es la "creacion" del path param
+                path: "/products/edit/:id",
+                element: <EditProductPage />
             },
             {
                 // Una ruta de error, cualquier ruta mal escrita te lleva a esta pagina

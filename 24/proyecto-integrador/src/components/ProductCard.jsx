@@ -1,6 +1,33 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import useDeleteProduct from "../hooks/products/useDeleteProduct";
 
 function ProductCard({ products }) {
+  const navigate = useNavigate()
+  const {deleteProduct, error} = useDeleteProduct()
+  
+  const handleEditProduct = (e, productId) => {
+    e.stopPropagation()
+    navigate(`/products/edit/${productId}`)
+  }
+
+   const handleDeleteProduct = async (e, productId) => {
+    e.stopPropagation()
+    if(window.confirm("Estas seguro que queres eliminar el producto?")){
+     const response = await deleteProduct(productId)
+     console.log(response)
+     if(response){
+      // Permite actualizar la pagina
+      window.location.reload()
+      // Lo mejor al borrar es volver a ejecutar el hook get de products useGetProducts
+      return
+     }
+    }
+    
+  }
+
+
+
   return (
     <section
       style={{
@@ -46,6 +73,12 @@ function ProductCard({ products }) {
               Producto destacado
             </p>
           )}
+
+          <div>
+          <button onClick={(e) => handleEditProduct(e, product.id)}> Editar </button>
+          <button onClick={(e) => handleDeleteProduct(e, product.id)} >Borrar</button>
+          </div>
+
         </div>
       ))}
     </section>

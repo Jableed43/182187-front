@@ -1,42 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "auriculares bluetooth",
-      "price": 2499.99,
-      "profitRate": 1.21,
-      "description": "auriculares inalambricos con cancelacion activa de ruido y 30 horas de autonomia.",
-      "quantity": 45,
-      "status": "AVAILABLE",
-      "category": "65f8d0c2e391b1a0d83cf120",
-      "highlighted": true,
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300"
-    },
-    {
-      "id": 2,
-      "name": "teclado mecanico rgb",
-      "price": 5800,
-      "profitRate": 1.25,
-      "description": "teclado mecanico layout español con switches red y retroiluminacion rgb configurable.",
-      "quantity": 20,
-      "status": "AVAILABLE",
-      "category": "65f8d0c2e391b1a0d83cf120",
-      "highlighted": true,
-      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=300"
-    },
-    {
-      "id": 3,
-      "name": "mouse gamer 16000 dpi",
-      "price": 3200,
-      "profitRate": 1.21,
-      "description": "mouse optico de alta precision para gaming con botones laterales programables.",
-      "quantity": 60,
-      "status": "AVAILABLE",
-      "category": "65f8d0c2e391b1a0d83cf120",
-      "highlighted": false,
-      "image": "https://images.unsplash.com/photo-1527698266440-12104e498b76?w=300"
-    },
-    {
       "id": 4,
       "name": "monitor 24 pulgadas full hd",
       "price": 18500,
@@ -50,7 +14,7 @@
     },
     {
       "id": 5,
-      "name": "soporte de aluminio para laptop",
+      "name": "Maquina de escribir",
       "price": 1500,
       "profitRate": 1.21,
       "description": "soporte ergonomico y plegable compatible con laptops de hasta 17 pulgadas.",
@@ -62,15 +26,15 @@
     },
     {
       "id": 6,
-      "name": "cable hdmi 2.1 ultra high speed",
-      "price": 850,
+      "name": "cable hdmi 3.0",
+      "price": 8500,
       "profitRate": 1.21,
-      "description": "cable hdmi con soporte para resoluciones 8k a 60hz y 4k a 120hz.",
-      "quantity": 200,
+      "description": "cable hdmi soporte 16k",
+      "quantity": 100,
       "status": "AVAILABLE",
       "category": "65f8d0c2e391b1a0d83cf120",
       "highlighted": false,
-      "image": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=300"
+      "image": "https://www.venex.com.ar/products_images/1582750319_dfgdgd.jpg"
     },
     {
       "id": 7,
