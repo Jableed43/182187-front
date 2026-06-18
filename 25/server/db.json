@@ -203,28 +203,20 @@
       "category": "65f8d0c2e391b1a0d83cf120",
       "highlighted": false,
       "image": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=300"
-    },
-    {
-      "name": "iphone 17 pro max",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsXe0wrvD4Evs5Mo9yexv68Rcw0JtN_bhPgg&s",
-      "description": "Alto celu, cuidado que no te lo roben",
-      "price": 2000000,
-      "quantity": 10,
-      "id": 21
-    },
-    {
-      "name": "lenovo legion",
-      "image": "https://p3-ofp.static.pub/fes/cms/2023/02/14/jaxvewpm8yqrpbvdlf8t2othauezut964921.png",
-      "description": "alta compu, pero la thinkpad es mejor",
-      "price": 1700000,
-      "quantity": 5,
-      "id": 22
     }
   ],
   "category": [
     {
       "id": "65f8d0c2e391b1a0d83cf120",
       "name": "electronica"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "email": "jlopez@gmail.com",
+      "name": "javier",
+      "password": "Password123"
     }
   ]
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import useDeleteProduct from "../hooks/products/useDeleteProduct";
 
@@ -26,7 +25,17 @@ function ProductCard({ products }) {
     
   }
 
-
+    if(error){
+    return (
+      <>
+      <div className="loading-error-screen">
+        <h2> Error al borrar el producto </h2>
+        {/* <p> {error.message} </p> */}
+        <p> {error?.message || String(error)} </p>
+      </div>
+      </>
+    )
+  }
 
   return (
     <section
