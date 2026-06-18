@@ -30,8 +30,11 @@ function useRegisterUser() {
 
         } catch (error) {
             console.error("Error al registrar usuario")
+            setError(error)
+            return null
         }
     }
+    return {error, registerUser}
 
 }
 
