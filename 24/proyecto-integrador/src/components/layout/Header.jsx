@@ -1,6 +1,13 @@
 import { NavLink } from "react-router-dom";
+import useAuth from "../../hooks/user/useAuth";
 
 function Header() {
+  const { isAuthenticated, user, logout } = useAuth();
+
+  const handleLogout = () => {
+    logout()
+  }
+
   return (
     <header>
       <nav className="navbar navbar-expand-lg">
@@ -24,10 +31,43 @@ function Header() {
                   Productos
                 </NavLink>
               </li>
+              {
+                !isAuthenticated && (
+              <li className="nav-item">
+                <NavLink
+                  aria-current="page"
+                  className="nav-link"
+                  to="/user/register"
+                >
+                  Registrate
+                </NavLink>
+              </li>
+                )
+              }
+              {!isAuthenticated && (
+                <li className="nav-item">
+                  <NavLink
+                    aria-current="page"
+                    className="nav-link"
+                    to="/user/login"
+                  >
+                    Ingresá
+                  </NavLink>
+                </li>
+              )}
+              {isAuthenticated && (
+                <li className="nav-item">
+                  <button onClick={handleLogout} >
+                    Logout
+                  </button>
+                </li>
+              )}
+              
             </ul>
           </div>
         </div>
       </nav>
+      {user && <p> Bienvenido {user.email}!! </p>}
     </header>
   );
 }

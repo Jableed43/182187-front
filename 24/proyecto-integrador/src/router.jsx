@@ -4,6 +4,10 @@ import Home from './components/pages/Home'
 import Products from './components/pages/Products'
 import CreateProductPage from './components/pages/CreateProductPage'
 import EditProductPage from './components/pages/EditProductPage'
+import RegisterUserPage from './components/pages/RegisterUserPage'
+import LoginUserPage from './components/pages/LoginUserPage'
+
+// TODO: Ahora que tenemos useAuth, no deberiamos poder acceder a ciertas rutas
 
 export const router = createBrowserRouter([
     {
@@ -28,6 +32,14 @@ export const router = createBrowserRouter([
                 // El :id es la "creacion" del path param
                 path: "/products/edit/:id",
                 element: <EditProductPage />
+            },
+            {
+                path: "/user/register",
+                element: <RegisterUserPage/>
+            },
+            {
+                path: "/user/login",
+                element: <LoginUserPage />
             },
             {
                 // Una ruta de error, cualquier ruta mal escrita te lleva a esta pagina

@@ -43,3 +43,10 @@ h1 {
   text-align: center;
   padding: 80px;
 }
+
+form {
+  display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}

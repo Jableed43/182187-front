@@ -217,6 +217,12 @@
       "email": "jlopez@gmail.com",
       "name": "javier",
       "password": "Password123"
+    },
+    {
+      "email": "cristian@gmail.com",
+      "name": "cristian",
+      "password": "Password123",
+      "id": "_GnUg2H"
     }
   ]
 }
