@@ -1,0 +1,52 @@
+/* Sirve para mandar abajo al footer aunque el contenido no tenga el largo suficiente */
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  color: var(--bs-secondary-color);
+}
+
+.navbar-brand {
+  color: var(--bs-secondary-color);
+}
+
+nav {
+  background-color: rgb(86, 124, 189);
+}
+
+body {
+  background: #C8D9E6;
+  background: linear-gradient(315deg, rgba(200, 217, 230, 1) 17%, rgba(245, 239, 235, 1) 47%, rgba(86, 124, 189, 1) 76%, rgba(86, 124, 189, 1) 88%);
+}
+
+.img-portada-container {
+  display: flex;
+}
+
+.img-portada {
+  width: 70vw;
+  margin: auto;
+  filter: contrast(0.9);
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.loading-error-screen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  text-align: center;
+  padding: 80px;
+}
+
+form {
+  display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}

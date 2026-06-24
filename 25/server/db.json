@@ -25,36 +25,12 @@
       "image": "https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?w=300"
     },
     {
-      "id": 6,
-      "name": "cable hdmi 3.0",
-      "price": 8500,
-      "profitRate": 1.21,
-      "description": "cable hdmi soporte 16k",
-      "quantity": 100,
-      "status": "AVAILABLE",
-      "category": "65f8d0c2e391b1a0d83cf120",
-      "highlighted": false,
-      "image": "https://www.venex.com.ar/products_images/1582750319_dfgdgd.jpg"
-    },
-    {
-      "id": 7,
-      "name": "cargador rapido usb-c 65w",
-      "price": 2800,
-      "profitRate": 1.21,
-      "description": "cargador de pared gan para carga rapida de celulares, tablets y laptops.",
-      "quantity": 80,
-      "status": "AVAILABLE",
-      "category": "65f8d0c2e391b1a0d83cf120",
-      "highlighted": true,
-      "image": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=300"
-    },
-    {
       "id": 8,
       "name": "pad de mouse xl antiderrapante",
       "price": 1200,
       "profitRate": 1.21,
       "description": "alfombrilla de tela de tamaño extendido (900x400mm) con bordes cosidos.",
-      "quantity": 150,
+      "quantity": 146,
       "status": "AVAILABLE",
       "category": "65f8d0c2e391b1a0d83cf120",
       "highlighted": false,
@@ -78,7 +54,7 @@
       "price": 1400,
       "profitRate": 1.21,
       "description": "pendrive de metal ultra resistente con alta velocidad de lectura y escritura.",
-      "quantity": 110,
+      "quantity": 109,
       "status": "AVAILABLE",
       "category": "65f8d0c2e391b1a0d83cf120",
       "highlighted": false,
@@ -90,7 +66,7 @@
       "price": 12500,
       "profitRate": 1.21,
       "description": "unidad de estado solido externa de alta velocidad de transferencia de datos.",
-      "quantity": 18,
+      "quantity": 17,
       "status": "AVAILABLE",
       "category": "65f8d0c2e391b1a0d83cf120",
       "highlighted": true,
@@ -138,7 +114,7 @@
       "price": 4500,
       "profitRate": 1.21,
       "description": "mochila con multiples compartimentos y puerto usb para carga externa.",
-      "quantity": 40,
+      "quantity": 39,
       "status": "AVAILABLE",
       "category": "65f8d0c2e391b1a0d83cf120",
       "highlighted": false,
@@ -150,7 +126,7 @@
       "price": 3100,
       "profitRate": 1.21,
       "description": "hub usb-c con salidas hdmi, usb 3.0 y lector de tarjetas sd.",
-      "quantity": 55,
+      "quantity": 54,
       "status": "AVAILABLE",
       "category": "65f8d0c2e391b1a0d83cf120",
       "highlighted": false,
@@ -162,7 +138,7 @@
       "price": 3800,
       "profitRate": 1.21,
       "description": "cargador portatil de alta capacidad con dos puertos de salida usb.",
-      "quantity": 70,
+      "quantity": 69,
       "status": "AVAILABLE",
       "category": "65f8d0c2e391b1a0d83cf120",
       "highlighted": false,
@@ -216,13 +192,58 @@
       "id": "1",
       "email": "jlopez@gmail.com",
       "name": "javier",
-      "password": "Password123"
+      "password": "Password123",
+      "role": "admin",
+      "superadmin": true
     },
     {
       "email": "cristian@gmail.com",
       "name": "cristian",
       "password": "Password123",
-      "id": "_GnUg2H"
+      "id": "_GnUg2H",
+      "role": "cliente",
+      "deletedAt": "2026-06-24T00:41:12.801Z"
+    },
+    {
+      "email": "cristian@gmail.com",
+      "name": "cristian",
+      "password": "Password123",
+      "role": "cliente",
+      "id": "tz_gGCi"
+    }
+  ],
+  "orders": [
+    {
+      "userId": "tz_gGCi",
+      "items": [
+        {
+          "productId": 8,
+          "quantity": 4
+        },
+        {
+          "productId": 10,
+          "quantity": 1
+        },
+        {
+          "productId": 11,
+          "quantity": 1
+        },
+        {
+          "productId": 15,
+          "quantity": 1
+        },
+        {
+          "productId": 16,
+          "quantity": 1
+        },
+        {
+          "productId": 17,
+          "quantity": 1
+        }
+      ],
+      "total": 30100,
+      "createdAt": "2026-06-24T00:57:17.078Z",
+      "id": 1
     }
   ]
 }
